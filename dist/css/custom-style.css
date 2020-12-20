@@ -1,0 +1,63 @@
+* {
+  font-family: 'Cairo', sans-serif;;
+}
+
+.clearFix {
+  clear: both;
+  margin-top: 20px;
+}
+
+/* START CUSTOMIZE SCROLLBAR STYLE */
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+} 
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F1F1F1;
+}
+/* END CUSTOMIZE SCROLLBAR STYLE */
+
+/* START CUSTOMIZE MODAL SCROLLBAR STYLE */
+.modal.show::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.modal.show::-webkit-scrollbar-thumb {
+  background-color: #F1F1F1;
+}
+/* END CUSTOMIZE MODAL SCROLLBAR STYLE */
+
+
+#profile .ck.ck-editor {
+  width: 100% !important;
+}
+
+#add-clinic .ck.ck-editor {
+  width: 100% !important;
+}
+
+#reservation .ck.ck-editor {
+  width: 100% !important;
+}
+
+#add-patient .ck.ck-editor {
+  width: 100% !important;
+}
+
+#new-revealed .ck.ck-editor {
+  width: 100% !important;
+}
+
+#new-analyses .ck.ck-editor {
+  width: 100% !important;
+}
+
+#new-pregnancy-follow .ck.ck-editor {
+  width: 100% !important;
+}
+
+#new-ovulation-follow .ck.ck-editor {
+  width: 100% !important;
+}
