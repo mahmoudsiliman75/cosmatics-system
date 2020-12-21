@@ -8,14 +8,13 @@
     <meta name="description" content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
-		<title>UCare Admin DashBoard</title>
+		<title>Cosmatics DashBoard</title>
 		<!-- BEGIN: Google Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap">
 		<!-- BEGIN: Google Fonts -->
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="dist/css/app.css" />
     <link rel="stylesheet" href="dist/css/custom-style.css" />
-    <link rel="stylesheet" href="dist/css/app-ar.css" />
     <!-- END: CSS Assets-->
 </head>
 <!-- END: Head -->
@@ -179,13 +178,10 @@
 
 	<div class="flex">
 	<!-- BEGIN: Side Menu -->
-	<nav class="side-nav">
-		<a href="index.php" class="intro-x flex items-center pl-5 pt-4">
-			<img alt="Midone Tailwind HTML Admin Template" class="w-16" src="dist/images/icon.png">
-			<span class="hidden xl:block text-white text-lg ml-3"> U<span class="font-medium">Care</span> </span>
+	<nav class="side-nav pt-2">
+		<a href="index.php" class="nav-brand intro-x flex items-center">
+			<img alt="Midone Tailwind HTML Admin Template" class="w-44" src="dist/images/icon.png">
 		</a>
-
-		<div class="side-nav__devider my-6"></div>
 
 		<ul>
 			<li>
@@ -196,9 +192,9 @@
 			</li>
 
 			<li>
-				<a href="inbox.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="inbox"></i> </div>
-					<div class="side-menu__title"> Inbox </div>
+				<a href="edit-profile.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="settings"></i> </div>
+					<div class="side-menu__title"> Edit Profile </div>
 				</a>
 			</li>
 
@@ -210,9 +206,9 @@
 			</li>
 
 			<li>
-				<a href="edit-profile.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="settings"></i> </div>
-					<div class="side-menu__title"> Edit Profile </div>
+				<a href="inbox.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="inbox"></i> </div>
+					<div class="side-menu__title"> Inbox </div>
 				</a>
 			</li>
 
@@ -256,13 +252,6 @@
 			</li>
 
 			<li>
-				<a href="governorate-manage.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="map"></i> </div>
-					<div class="side-menu__title"> Governorates Management </div>
-				</a>
-			</li>
-
-			<li>
 				<a href="reservation.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
 					<div class="side-menu__title"> Reservation </div>
@@ -301,32 +290,9 @@
 			</li>
 
 			<li>
-				<a href="schedules.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="file-text"></i> </div>
-					<div class="side-menu__title"> Schedules </div>
-				</a>
-			</li>
-
-			<li>
 				<a href="financial.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="dollar-sign"></i> </div>
 					<div class="side-menu__title"> Financilas </div>
-				</a>
-			</li>
-
-			<div class="side-nav__devider my-6"></div>
-
-			<li>
-				<a href="policies-and-terms.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="shield"></i> </div>
-					<div class="side-menu__title"> Policies And Terms </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="roles.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="shield"></i> </div>
-					<div class="side-menu__title"> Roles </div>
 				</a>
 			</li>
 
@@ -340,7 +306,7 @@
 	<div class="top-bar">
 
 		<!-- BEGIN: Breadcrumb -->
-		<div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Application</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="" class="breadcrumb--active">Dashboard</a> </div>
+		<div class="-intro-x breadcrumb mr-auto hidden sm:flex">  <i data-feather="home" class="breadcrumb__icon"></i> <a href="#" class=""> Home</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="" class="text-purple-700">Current Page</a> </div>
 		<!-- END: Breadcrumb -->
 
 		<!-- BEGIN: Search -->

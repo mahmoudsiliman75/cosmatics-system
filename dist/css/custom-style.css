@@ -1,24 +1,32 @@
+/* START:: GLOBAL STYLING */
 * {
-  font-family: 'Cairo', sans-serif;;
+  font-family: 'Cairo', sans-serif;
 }
 
+html {
+  background: linear-gradient(to bottom, #0d697e, #a056c5, #961f60);
+}
 .clearFix {
   clear: both;
   margin-top: 20px;
 }
+button.bg-theme-1 {
+  background-color: #9571b8;
+};
+/* END:: GLOBAL STYLING */
 
-/* START CUSTOMIZE SCROLLBAR STYLE */
+/* START:: CUSTOMIZE SCROLLBAR STYLE */
 body::-webkit-scrollbar {
-  width: 6px;
-  background-color: transparent;
+  width: 5px;
+  background: transparent;
 } 
 
 body::-webkit-scrollbar-thumb {
-  background-color: #F1F1F1;
+  background-color: #9571b8;
 }
-/* END CUSTOMIZE SCROLLBAR STYLE */
+/* END:: CUSTOMIZE SCROLLBAR STYLE */
 
-/* START CUSTOMIZE MODAL SCROLLBAR STYLE */
+/* START:: CUSTOMIZE MODAL SCROLLBAR STYLE */
 .modal.show::-webkit-scrollbar {
   width: 6px;
   background-color: transparent;
@@ -27,9 +35,9 @@ body::-webkit-scrollbar-thumb {
 .modal.show::-webkit-scrollbar-thumb {
   background-color: #F1F1F1;
 }
-/* END CUSTOMIZE MODAL SCROLLBAR STYLE */
+/* END CUSTOMIZE:: MODAL SCROLLBAR STYLE */
 
-
+/* START:: CUSTOMIZING CK EDITORS STYLE */
 #profile .ck.ck-editor {
   width: 100% !important;
 }
@@ -61,3 +69,48 @@ body::-webkit-scrollbar-thumb {
 #new-ovulation-follow .ck.ck-editor {
   width: 100% !important;
 }
+/* END:: CUSTOMIZING CK EDITORS STYLE */
+
+/* START:: CUSTOMIZING HEADER STYLE */
+.dropdown .dropdown-box .bg-theme-38 {
+  background-color: #71459b;
+}
+
+.dropdown .dropdown-box .bg-theme-38 .border-theme-40 {
+  border-color: #9571b8;
+}
+
+.hover\:bg-theme-1:hover  {
+  background-color: #9571b8;
+}
+/* END:: CUSTOMIZING HEADER STYLE */
+
+/* START:: CUSTOMIZING SIDE MENU STYLE */
+.side-nav .nav-brand{
+  width: 120px;
+  margin-bottom: 15px;
+  margin-left: 55px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #f1f5f8;
+  box-shadow: 0 0 8px 2px #f1f5f8;
+}
+
+.side-nav .side-menu.side-menu--active .side-menu__icon svg {
+  color: #645ea8;
+}
+
+.side-nav>ul ul {
+  background-color: transparent;
+  padding-left: 25px;
+}
+
+.side-nav>ul ul li:hover {
+  background-color: #583d72;
+  border-radius: 40px;
+}
+
+.side-nav>ul>li>.side-menu:hover:not(.side-menu--active):not(.side-menu--open) .side-menu__icon:before {
+  background-color: #583d72;
+}
+/* END:: CUSTOMIZING SIDE MENU STYLE */
