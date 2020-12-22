@@ -43,11 +43,6 @@
           </div>
 
           <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:flex-row p-5 -mx-5">
-            <label class="text-gray-600 mb-3 text-lg">Chronic Disease</label>
-            <input type="text" class="input w-full border mt-2" placeholder="Chronic Disease"> 
-          </div>
-
-          <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:flex-row p-5 -mx-5">
             <label class="text-gray-600 mb-3 text-lg">Patient Complaints</label>
             <input type="text" class="input w-full border mt-2" placeholder="Patient Complaints"> 
           </div>

@@ -220,6 +220,14 @@
 			</li>
 
 			<li>
+				<a href="reservation.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
+					<div class="side-menu__title"> Reservation </div>
+				</a>
+			</li>
+
+
+			<li>
 				<a href="javascript:;" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
 					<div class="side-menu__title"> Employees <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
@@ -247,13 +255,6 @@
 				<a href="all-clinics.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="home"></i> </div>
 					<div class="side-menu__title"> Clinics </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="reservation.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
-					<div class="side-menu__title"> Reservation </div>
 				</a>
 			</li>
 
@@ -410,10 +411,6 @@
 					</div>
 
 					<div class="p-2">
-						<a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
-							<i data-feather="user" class="w-4 h-4 mr-2 ml-2"></i> Profile 
-						</a>
-
 						<a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> 
 							<i data-feather="lock" class="w-4 h-4 mr-2 ml-2"></i> Reset Password 
 						</a>

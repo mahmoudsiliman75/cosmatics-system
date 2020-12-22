@@ -13,112 +13,95 @@ $(document).ready(function () {
     }
 });
 
-  // SHOW AND HIDE HUSDEND NAME FIELD IN RESERVATION PAGE
-  $('#reservation-husbend-name').css('display' , 'none');
+  // START:: RESERVATION PAGE
+  $('#drug-allergy-comments').css('visibility' , 'hidden');
+  $('#smoking-comments').css('visibility' , 'hidden');
+  $('#blood-transfusion-comments').css('visibility' , 'hidden');
+  $('#alcoholic-comments').css('visibility' , 'hidden');
+  $('#prev-sergeries-comments').css('visibility' , 'hidden');
+  $('#family-history-comments').css('visibility' , 'hidden'); 
+  $('#drug-allergy-comments').css('visibility' , 'hidden'); 
 
-  $("#marital-status").on('change' , function() {
-    let optionValue = $("#marital-status").children('option:checked').val();
-    if(optionValue == 0) {
-      $('#reservation-husbend-name').css('display' , "block");
-    } else if (optionValue == 1) {
-      $('#reservation-husbend-name').css('display' , "none");
+  $("#drug-allergy").on('change' , function() {
+    let DrugAllergyOptionValue = $("#drug-allergy").children('option:checked').val();
+    if(DrugAllergyOptionValue == 0) {
+      $('#drug-allergy-comments').css('visibility' , "hidden");
+    } else if (DrugAllergyOptionValue == 1) {
+      $('#drug-allergy-comments').css('visibility' , "visible");
     }
   }); 
 
-  // SHOW AND HIDE PREGNANCY DETAILS FIELDS IN ADD NEW PATIENT PAGE
-  $('#gravida-container').css('display' , 'none');
-  $('#para-container').css('display' , 'none');
-  $('#abortion-container').css('display' , 'none');
-  $('#vaginal-container').css('display' , 'none');
-  $('#cs-container').css('display' , 'none');
-  $('#last-birth-date-container').css('display' , 'none');
-  $('#male-children-container').css('display' , 'none');
-  $('#female-children-container').css('display' , 'none');
-  $('#last-birth-details-container').css('display' , 'none');
-  // $('#blanck-container').css('display' , 'none');
+  $("#smoking").on('change' , function() {
+    let smokingOptionValue = $('#smoking').children('option:checked').val();
+    if ( smokingOptionValue == 0 ) {
+      $('#smoking-comments').css('visibility' , 'hidden');
+    } else if ( smokingOptionValue == 1 ) {
+      $('#smoking-comments').css('visibility' , 'visible');
+    };
+  });
 
-  $('#pregnancy-status').on('change' , function(){
-    let pregnancyOptionValue = $('#pregnancy-status').children('option:checked').val();
-    if ( pregnancyOptionValue == 0 ) {
-      $('#gravida-container').css('display' , 'block');
-      $('#para-container').css('display' , 'block');
-      $('#abortion-container').css('display' , 'block');
-      $('#vaginal-container').css('display' , 'block');
-      $('#cs-container').css('display' , 'block');
-      $('#last-birth-date-container').css('display' , 'block');
-      $('#male-children-container').css('display' , 'block');
-      $('#female-children-container').css('display' , 'block');
-      $('#last-birth-details-container').css('display' , 'block');
-      $('#blanck-container').css('display' , 'block');
-    } else if (pregnancyOptionValue == 1) {
-      $('#gravida-container').css('display' , 'none');
-      $('#para-container').css('display' , 'none');
-      $('#abortion-container').css('display' , 'none');
-      $('#vaginal-container').css('display' , 'none');
-      $('#cs-container').css('display' , 'none');
-      $('#last-birth-date-container').css('display' , 'none');
-      $('#male-children-container').css('display' , 'none');
-      $('#female-children-container').css('display' , 'none');
-      $('#last-birth-details-container').css('display' , 'none');
-      $('#blanck-container').css('display' , 'none');
+  $("#blood-transfusion").on('change' , function() {
+    let bloodTransfusionOptionValue = $('#blood-transfusion').children('option:checked').val();
+    if (bloodTransfusionOptionValue == 0) {
+      $('#blood-transfusion-comments').css('visibility' , 'hidden');
+    } else if ( bloodTransfusionOptionValue == 1 ) {
+      $('#blood-transfusion-comments').css('visibility' , 'visible');
     }
   });
 
-      // SHOW AND HIDE SURGERY DETAILS FIELD IN ADD NEW PATIENT PAGE
-      $("#surgery-details-container").css('visibility' , 'hidden');
+  $("#alcoholic").on('change' , function() {
+    let alcoholicOptionValue = $("#alcoholic").children('option:checked').val();
+    if ( alcoholicOptionValue == 0 ) {
+      $('#alcoholic-comments').css('visibility' , 'hidden');
+    } else if ( alcoholicOptionValue == 1 ) {
+      $('#alcoholic-comments').css('visibility' , 'visible');
+    }
+  });
 
-      $("#Surgery-status").on('change' , function() {
-        let surgeryOptionValue = $('#Surgery-status').children('option:checked').val();
-        if ( surgeryOptionValue == 0 ) {
-          $("#surgery-details-container").css('visibility' , 'hidden');
-        } else if ( surgeryOptionValue == 1 ) {
-          $("#surgery-details-container").css('visibility' , 'visible');
-        }
-      });
+  $("#prev-sergeries").on('change' , function() {
+    let prevSergOptionValue = $("#prev-sergeries").children('option:checked').val();
+    if ( prevSergOptionValue == 0 ) {
+      $('#prev-sergeries-comments').css('visibility' , 'hidden');
+    } else if ( prevSergOptionValue == 1 ) {
+      $('#prev-sergeries-comments').css('visibility' , 'visible');
+    }
+  });
 
-      // SHOW AND HIDE MIDICINS DETAILS FIELD IN ADD NEW PATIENT PAGE
-      $("#medicins-details-container").css('visibility' , 'hidden');
+  $("#family-history").on('change' , function() {
+    let familyOptionValue = $("#family-history").children('option:checked').val();
+    if ( familyOptionValue == 0 ) {
+      $('#family-history-comments').css('visibility' , 'hidden');
+    } else if ( familyOptionValue == 1 ) {
+      $('#family-history-comments').css('visibility' , 'visible');
+    }
+  });
 
-      $("#medicins-status").on('change' , function () { 
-        let medicinOptionValue = $("#medicins-status").children('option:checked').val();
-        console.log(medicinOptionValue)
-        if ( medicinOptionValue == 0 ) {
-          $("#medicins-details-container").css('visibility' , 'hidden');
-        } else if ( medicinOptionValue == 1 ) {
-          $("#medicins-details-container").css('visibility' , 'visible');
-        } 
-      });
+  $("#drug-allergy").on('change' , function() {
+    let drugOptionValue = $("#drug-allergy").children('option:checked').val();
+    if ( drugOptionValue == 0 ) {
+      $('#drug-allergy-comments').css('visibility' , 'hidden');
+    } else if ( drugOptionValue == 1 ) {
+      $('#drug-allergy-comments').css('visibility' , 'visible');
+    }
+  });
 
-      // SHOW AND HIDE EDEMA DETAILS FIELD IN PREGNANCY FOLLOW PAGE
-      $("#edema-details-container").css("display" , "none");
+  $(".chronic-diseases-selector").on('change' , function() {
+    // let optionText = $('.chronic-diseases-selector').children('option:checked').text();
+    let appendMarkUp = $('#chronic-disease-comments').html();
 
-      $("#edema-status").on('change' , function() {
-        let edemaOptionValue = $("#edema-status").children("option:checked").val();
-        if ( edemaOptionValue == 0 ) {
-          $("#edema-details-container").css("display" , "none")
-        } else if ( edemaOptionValue == 1 ) {
-          $("#edema-details-container").css("display" , "block")
-        }
-      });
+    // $('.chronic-disease-name').text(optionText);
+    $('.appended-elements-container').append(appendMarkUp);
+  });
 
+  $('.close-comments').on('click' , function() {
+    $('#chronic-disease-comments').remove();
+    console.log('Run CLick!');
+  }); 
+  // END:: RESERVATION PAGE
 
-      $("#lmp-date-container").css("display" , "none");
-      $("#edd-date-container").css("display" , "none");
-
-      $("#pregnancy-follow-data").on('change' , function() {
-        let edemaOptionValue = $("#pregnancy-follow-data").children("option:checked").val();
-        if ( edemaOptionValue == 1 ) {
-          $("#lmp-date-container").css("display" , "none");
-          $("#edd-date-container").css("display" , "none");
-        } else if ( edemaOptionValue == 0 ) {
-          $("#lmp-date-container").css("display" , "block");
-          $("#edd-date-container").css("display" , "block");
-        }
-      });
-
-      // CLOSE NOTIFICATIONS
-      $("#close-notification").on('click' , function(){
-        $(".notification-container").css('display' , 'none')
-      });
+  // CLOSE NOTIFICATIONS
+  $("#close-notification").on('click' , function(){
+    $(".notification-container").css('display' , 'none')
+  });
 });
 
