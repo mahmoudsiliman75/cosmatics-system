@@ -19,8 +19,7 @@ $(document).ready(function () {
   $('#blood-transfusion-comments').css('visibility' , 'hidden');
   $('#alcoholic-comments').css('visibility' , 'hidden');
   $('#prev-sergeries-comments').css('visibility' , 'hidden');
-  $('#family-history-comments').css('visibility' , 'hidden'); 
-  $('#drug-allergy-comments').css('visibility' , 'hidden'); 
+  $('#family-history-comments').css('visibility' , 'hidden');
 
   $("#drug-allergy").on('change' , function() {
     let DrugAllergyOptionValue = $("#drug-allergy").children('option:checked').val();
@@ -76,27 +75,25 @@ $(document).ready(function () {
     }
   });
 
-  $("#drug-allergy").on('change' , function() {
-    let drugOptionValue = $("#drug-allergy").children('option:checked').val();
-    if ( drugOptionValue == 0 ) {
-      $('#drug-allergy-comments').css('visibility' , 'hidden');
-    } else if ( drugOptionValue == 1 ) {
-      $('#drug-allergy-comments').css('visibility' , 'visible');
-    }
+  $('.add-sec').on('click' , function(event) {
+    event.preventDefault();
+    let myMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-10">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+      </div>
+
+      <span class="delete col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+
+    </div>
+    `;
+    $('.comments-container').append(myMarkUp);
+    $('.delete').on('click' , function() {
+      $(this).parent().remove();
+    });
   });
-
-  $(".chronic-diseases-selector").on('change' , function() {
-    // let optionText = $('.chronic-diseases-selector').children('option:checked').text();
-    let appendMarkUp = $('#chronic-disease-comments').html();
-
-    // $('.chronic-disease-name').text(optionText);
-    $('.appended-elements-container').append(appendMarkUp);
-  });
-
-  $('.close-comments').on('click' , function() {
-    $('#chronic-disease-comments').remove();
-    console.log('Run CLick!');
-  }); 
   // END:: RESERVATION PAGE
 
   // CLOSE NOTIFICATIONS

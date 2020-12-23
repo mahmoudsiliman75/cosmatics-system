@@ -205,6 +205,20 @@
         <input type="text" class="input w-full border mt-2" placeholder="Family History Comments"> 
       </div>
 
+      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
+        <label class="text-gray-600 mb-3 text-lg">Drug Allergy</label>
+        <select id="drug-allergy" data-search="true" class="tail-select w-full">
+          <option>Drug Allergy</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select> 
+      </div>
+
+      <div id="drug-allergy-comments" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:col-span-8 lg:flex-row pr-3 pl-3 -mx-5">
+        <label class="text-gray-600 mb-3 text-lg">Drug Allergy Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Drug Allergy Comments"> 
+      </div>
+
       <div class="col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Medications</label>
         <input type="text" class="input w-full border mt-2" placeholder="Medications"> 
@@ -231,12 +245,12 @@
         </div>
 
         <div class="col-span-2">
-          <button class="add-sec w-full button translate-y-3 mr-2 flex items-center justify-center bg-theme-1 text-white" style="margin-top: 25px"> Add </button>
+          <button class="stop w-full button translate-y-3 mr-2 flex items-center justify-center bg-theme-1 text-white" style="margin-top: 25px"> Add </button>
         </div>
       </div> 
 
-      <div class="comments-container col-span-12 lg:flex-row px-5 -mx-5 ">
-      </div> 
+      <div class="run col-span-12 lg:flex-row px-5 -mx-5 ">
+      </div>
 
     </div>
   </div>
@@ -244,6 +258,8 @@
   <button type="submit" class="button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
     <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Save 
   </button>
+  
+  
 
 </form>
 

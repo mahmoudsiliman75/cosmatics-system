@@ -12,9 +12,16 @@
 		<!-- BEGIN: Google Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap">
 		<!-- BEGIN: Google Fonts -->
+
+
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="dist/css/app.css" />
     <link rel="stylesheet" href="dist/css/custom-style.css" />
+	
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+
     <!-- END: CSS Assets-->
 </head>
 <!-- END: Head -->
@@ -222,10 +229,16 @@
 			<li>
 				<a href="reservation.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
-					<div class="side-menu__title"> Reservation </div>
+					<div class="side-menu__title"> Patient Registeration </div>
 				</a>
 			</li>
 
+			<li>
+				<a href="add-new-patient.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="edit-3"></i> </div>
+					<div class="side-menu__title"> Doctor Info </div>
+				</a>
+			</li>
 
 			<li>
 				<a href="javascript:;" class="side-menu">
