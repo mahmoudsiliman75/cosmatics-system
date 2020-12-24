@@ -1,8 +1,8 @@
 <?php include("layouts/header.php") ?>
 
-  <div class="intro-y flex items-center pt-5 h-10">
-    <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Doctor Info</h2>
-  </div>
+<div class="intro-y flex items-center pt-5 h-10">
+  <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Doctor Info</h2>
+</div>
 
 <div class="intro-y box px-5 pt-5 pb-5 mt-5">
   <form id="add-patient">
