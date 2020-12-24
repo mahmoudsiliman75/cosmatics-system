@@ -227,6 +227,13 @@
 			</li>
 
 			<li>
+				<a href="visites.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="log-in"></i> </div>
+					<div class="side-menu__title"> Visites </div>
+				</a>
+			</li>
+
+			<li>
 				<a href="investigations.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="briefcase"></i> </div>
 					<div class="side-menu__title"> Investigation </div>
