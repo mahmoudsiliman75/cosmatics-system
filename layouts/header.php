@@ -248,6 +248,13 @@
 			</li>
 
 			<li>
+				<a href="procedures.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="activity"></i> </div>
+					<div class="side-menu__title"> Procedure </div>
+				</a>
+			</li>
+
+			<li>
 				<a href="javascript:;" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
 					<div class="side-menu__title"> Employees <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
@@ -271,12 +278,7 @@
 				</ul>
 			</li>
 
-			<li>
-				<a href="all-clinics.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="home"></i> </div>
-					<div class="side-menu__title"> Clinics </div>
-				</a>
-			</li>
+
 
 			<li>
 				<a href="javascript:;" class="side-menu">

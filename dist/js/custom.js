@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
   // SELECT PROFILE IMG
-  $(".image").on('change',function() {
+  $(".image").on('change', function() {
     if (this.files && this.files[0]) {
       var reader = new FileReader();
 
-      reader.onload = function(e) {
+      reader.onload = (e) => {
         $('.image-preview').attr('src', e.target.result);
       }
 
@@ -21,7 +21,7 @@ $(document).ready(function () {
   $('#prev-sergeries-comments').css('visibility' , 'hidden');
   $('#family-history-comments').css('visibility' , 'hidden');
 
-  $("#drug-allergy").on('change' , function() {
+  $("#drug-allergy").on('change' , () => {
     let DrugAllergyOptionValue = $("#drug-allergy").children('option:checked').val();
     if(DrugAllergyOptionValue == 0) {
       $('#drug-allergy-comments').css('visibility' , "hidden");
@@ -30,7 +30,7 @@ $(document).ready(function () {
     }
   }); 
 
-  $("#smoking").on('change' , function() {
+  $("#smoking").on('change' , () => {
     let smokingOptionValue = $('#smoking').children('option:checked').val();
     if ( smokingOptionValue == 0 ) {
       $('#smoking-comments').css('visibility' , 'hidden');
@@ -39,7 +39,7 @@ $(document).ready(function () {
     };
   });
 
-  $("#blood-transfusion").on('change' , function() {
+  $("#blood-transfusion").on('change' , () => {
     let bloodTransfusionOptionValue = $('#blood-transfusion').children('option:checked').val();
     if (bloodTransfusionOptionValue == 0) {
       $('#blood-transfusion-comments').css('visibility' , 'hidden');
@@ -48,7 +48,7 @@ $(document).ready(function () {
     }
   });
 
-  $("#alcoholic").on('change' , function() {
+  $("#alcoholic").on('change' , () => {
     let alcoholicOptionValue = $("#alcoholic").children('option:checked').val();
     if ( alcoholicOptionValue == 0 ) {
       $('#alcoholic-comments').css('visibility' , 'hidden');
@@ -57,7 +57,7 @@ $(document).ready(function () {
     }
   });
 
-  $("#prev-sergeries").on('change' , function() {
+  $("#prev-sergeries").on('change' , () => {
     let prevSergOptionValue = $("#prev-sergeries").children('option:checked').val();
     if ( prevSergOptionValue == 0 ) {
       $('#prev-sergeries-comments').css('visibility' , 'hidden');
@@ -66,7 +66,7 @@ $(document).ready(function () {
     }
   });
 
-  $("#family-history").on('change' , function() {
+  $("#family-history").on('change' , () => {
     let familyOptionValue = $("#family-history").children('option:checked').val();
     if ( familyOptionValue == 0 ) {
       $('#family-history-comments').css('visibility' , 'hidden');
@@ -75,7 +75,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.add-sec').on('click' , function(event) {
+  $('.add-sec').on('click' , (event) => {
     event.preventDefault();
     let myMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
@@ -98,7 +98,7 @@ $(document).ready(function () {
   // END:: RESERVATION PAGE
 
   // START:: DOCTOR INFO PAGE
-  $('.add-complaints-sec').on('click' , function(event) {
+  $('.add-complaints-sec').on('click' , (event) => {
     event.preventDefault();
     let complaintsMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
@@ -119,7 +119,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.add-examination-sec').on('click' , function(event) {
+  $('.add-examination-sec').on('click' , (event) => {
     event.preventDefault();
     let examinationMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
@@ -140,7 +140,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.add-diagnosis-sec').on('click' , function(event) {
+  $('.add-diagnosis-sec').on('click' , (event) => {
     event.preventDefault();
     let diagnosisMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
@@ -161,7 +161,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.add-plan-sec').on('click' , function(event) {
+  $('.add-plan-sec').on('click' , (event) => {
     event.preventDefault();
     let planMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
@@ -184,7 +184,7 @@ $(document).ready(function () {
   // END:: DOCTOR INFO PAGE
 
   // START:: INVESTIGATIONS PAGE
-  $('.add-investigation-sec').on('click' , function(event) {
+  $('.add-investigation-sec').on('click' , (event) => {
     event.preventDefault();
     let planMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
@@ -211,9 +211,83 @@ $(document).ready(function () {
   });
   // END:: INVESTIGATIONS PAGE
 
+  // START:: PROCEDURES PAGE
+  $('.add-main-surgent-sec').on('click' , (event) => {
+    event.preventDefault();
+    let mainSurgentMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-9">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+      </div>
+
+      <span class="delete-main-surgent col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+
+    </div>
+    `;
+    $('.main-surgent-comments-container').append(mainSurgentMarkUp);
+
+    $('.delete-main-surgent').on('click' , function() {
+      $(this).parent().remove();
+    });
+  });
+
+  $('.add-assistant-sec').on('click' , (event) => {
+    event.preventDefault();
+    let assistantMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-9">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+      </div>
+
+      <span class="delete-assistant col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+
+    </div>
+    `;
+    $('.assistant-comments-container').append(assistantMarkUp);
+
+    $('.delete-assistant').on('click' , function() {
+      $(this).parent().remove();
+    });
+  });
+
+  $('.add-anesthesia-sec').on('click' , (event) => {
+    event.preventDefault();
+    let anesthesiaMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-9">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+      </div>
+
+      <span class="delete-anesthesia col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+
+    </div>
+    `;
+    $('.anesthesia-comments-container').append(anesthesiaMarkUp);
+
+    $('.delete-anesthesia').on('click' , function() {
+      $(this).parent().remove();
+    });
+  });
+
+  $('#complications-comments').css('display', 'none');
+  $('#complications').on('change', () => {
+    let optionValue = $('#complications').children('option:checked').val();
+    if ( optionValue == 0 ) {
+      $('#complications-comments').css('display', 'none');
+    } else if ( optionValue == 1 ) {
+      $('#complications-comments').css('display', 'block');
+    }
+  });
+  // END:: PROCEDURES PAGE
+
   // CLOSE NOTIFICATIONS
-  $("#close-notification").on('click' , function(){
+  $("#close-notification").on('click' , () => {
     $(".notification-container").css('display' , 'none')
   });
 });
-
