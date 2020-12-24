@@ -275,6 +275,20 @@
 						</a>
 					</li>
 
+					<li>
+						<a href="surgery-financial-report.php" class="side-menu">
+							<div class="side-menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+							<div class="side-menu__title"> Surgeries Financial Report </div>
+						</a>
+					</li>
+
+					<li>
+						<a href="" class="side-menu">
+							<div class="side-menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+							<div class="side-menu__title"> Hospitals Financial Report </div>
+						</a>
+					</li>
+
 				</ul>
 			</li>
 
