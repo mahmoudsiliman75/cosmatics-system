@@ -255,6 +255,13 @@
 			</li>
 
 			<li>
+				<a href="procedure-financ.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="dollar-sign"></i> </div>
+					<div class="side-menu__title"> Procedure Financilas </div>
+				</a>
+			</li>
+
+			<li>
 				<a href="javascript:;" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
 					<div class="side-menu__title"> Employees <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>

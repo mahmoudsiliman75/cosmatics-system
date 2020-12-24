@@ -286,6 +286,34 @@ $(document).ready(function () {
   });
   // END:: PROCEDURES PAGE
 
+  // START:: PROCEDURED FINANCIALS PAGE
+  $('#installments-fees').css('visibility' , 'hidden');
+  $('#payment-status').on('change', () => {
+    let statusOptionValue = $('#payment-status').children('option:checked').val();
+    if ( statusOptionValue == 0 ) {
+      $('#installments-fees').css('visibility' , 'hidden');
+    } else if ( statusOptionValue == 1 ) {
+      $('#installments-fees').css('visibility' , 'visible');
+    }
+  })
+
+  let calculateProfit = () => {
+    let procedresFees = parseInt( $('.procedure-fees').val() ) ;
+    let hospitalFees = parseInt( $('.hospital-fees').val() );
+    let hospitalOthers = parseInt( $('.hospital-other').val() );
+    $('.total-profets').val(procedresFees - (hospitalFees + hospitalOthers));
+  }
+
+  $('.procedure-fees').on( 'input', calculateProfit );
+  $('.hospital-fees').on( 'input', calculateProfit );
+  $('.hospital-other').on( 'input', calculateProfit );
+
+
+
+
+  
+  // END:: PROCEDURED FINANCIALS PAGE
+
   // CLOSE NOTIFICATIONS
   $("#close-notification").on('click' , () => {
     $(".notification-container").css('display' , 'none')
