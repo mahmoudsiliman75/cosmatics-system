@@ -12,7 +12,8 @@ html {
   margin-top: 20px;
 }
 
-button.bg-theme-1 {
+button.bg-theme-1, 
+a.bg-theme-1 {
   background-color: #9571b8;
 }
 

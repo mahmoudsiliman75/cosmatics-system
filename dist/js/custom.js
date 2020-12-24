@@ -306,16 +306,7 @@ $(document).ready(function () {
 
   $('.procedure-fees').on( 'input', calculateProfit );
   $('.hospital-fees').on( 'input', calculateProfit );
-  $('.hospital-other').on( 'input', calculateProfit );
-
-
-
-
-  
+  $('.hospital-other').on( 'input', calculateProfit );  
   // END:: PROCEDURED FINANCIALS PAGE
 
-  // CLOSE NOTIFICATIONS
-  $("#close-notification").on('click' , () => {
-    $(".notification-container").css('display' , 'none')
-  });
 });

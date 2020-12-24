@@ -213,20 +213,6 @@
 			</li>
 
 			<li>
-				<a href="inbox.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="inbox"></i> </div>
-					<div class="side-menu__title"> Inbox </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="notifications.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="bell"></i> </div>
-					<div class="side-menu__title">  Notifications </div>
-				</a>
-			</li>
-
-			<li>
 				<a href="reservation.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
 					<div class="side-menu__title"> Patient Registeration </div>
@@ -283,7 +269,7 @@
 					</li>
 
 					<li>
-						<a href="" class="side-menu">
+						<a href="hospitals-financials-reports.php" class="side-menu">
 							<div class="side-menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
 							<div class="side-menu__title"> Hospitals Financial Report </div>
 						</a>
