@@ -50,7 +50,7 @@
               </button>
 
               <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History With Visits" > 
-                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
+                <a href="patient-history-with-visites.php" class="w-5 h-5 flex items-center justify-center"> 
                   <i data-feather="hard-drive" class="w-4 h-4"></i> 
                 </a> 
               </button>

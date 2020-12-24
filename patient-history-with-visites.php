@@ -1,7 +1,7 @@
 <?php include("layouts/header.php") ?>
 
 <div class="intro-y flex items-center pt-5 h-10">
-  <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Patient Report Without Visits</h2>
+  <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Patient Report With Visits</h2>
 </div>
 
 <div class="intro-y box px-5 pt-5 pb-5 mt-5 mb-5">
@@ -92,6 +92,29 @@
 
   </div>
 
+</div>
+
+<div class="intro-y box px-5 pt-5 pb-5 mt-5 mb-5">
+  <div class="overflow-x-auto p-5"> 
+    <table class="table"> 
+      <thead> 
+        <tr class="bg-gray-200 dark:bg-dark-1"> 
+          <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">#</th> 
+          <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Visites Dates</th> 
+          <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Visites Details</th> 
+        </tr> 
+      </thead> 
+
+      <tbody> 
+        <tr> 
+          <td class="border-b dark:border-dark-5">1</td> 
+          <td class="border-b dark:border-dark-5">24 - 12 - 2020</td> 
+          <td class="border-b dark:border-dark-5">Bla Bla Bla Bla Bla Bla</td> 
+        </tr>
+
+      </tbody> 
+    </table> 
+  </div> 
 </div>
 
 <?php include("layouts/footer.php") ?>
