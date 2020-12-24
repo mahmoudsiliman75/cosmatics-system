@@ -263,22 +263,15 @@
 
 			<li>
 				<a href="javascript:;" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
-					<div class="side-menu__title"> Employees <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="file-text"></i> </div>
+					<div class="side-menu__title"> System Report <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
 				</a>
 				<ul class="">
 
 					<li>
-						<a href="add-user.php" class="side-menu">
-							<div class="side-menu__icon"> <i class="ml-3" data-feather="user-plus"></i> </div>
-							<div class="side-menu__title"> Add Employee </div>
-						</a>
-					</li>
-
-					<li>
-						<a href="all-employees.php" class="side-menu">
-							<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
-							<div class="side-menu__title"> All Employees </div>
+						<a href="surgeries-report.php" class="side-menu">
+							<div class="side-menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+							<div class="side-menu__title"> Surgeries Report </div>
 						</a>
 					</li>
 
