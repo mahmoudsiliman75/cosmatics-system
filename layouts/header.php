@@ -234,7 +234,7 @@
 			</li>
 
 			<li>
-				<a href="add-new-patient.php" class="side-menu">
+				<a href="doctor-info.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="edit-3"></i> </div>
 					<div class="side-menu__title"> Doctor Info </div>
 				</a>

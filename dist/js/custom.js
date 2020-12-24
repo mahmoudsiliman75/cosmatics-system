@@ -90,11 +90,99 @@ $(document).ready(function () {
     </div>
     `;
     $('.comments-container').append(myMarkUp);
+
     $('.delete').on('click' , function() {
       $(this).parent().remove();
     });
   });
   // END:: RESERVATION PAGE
+
+  // START:: DOCTOR INFO PAGE
+  $('.add-complaints-sec').on('click' , function(event) {
+    event.preventDefault();
+    let complaintsMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-8 md:col-span-10">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+      </div>
+
+      <span class="delete-complaint col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+
+    </div>
+    `;
+    $('.complaints-comments-container').append(complaintsMarkUp);
+
+    $('.delete-complaint').on('click' , function() {
+      $(this).parent().remove();
+    });
+  });
+
+  $('.add-examination-sec').on('click' , function(event) {
+    event.preventDefault();
+    let examinationMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-8 md:col-span-10">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+      </div>
+
+      <span class="delete-examination col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+
+    </div>
+    `;
+    $('.examination-comments-container').append(examinationMarkUp);
+
+    $('.delete-examination').on('click' , function() {
+      $(this).parent().remove();
+    });
+  });
+
+  $('.add-diagnosis-sec').on('click' , function(event) {
+    event.preventDefault();
+    let diagnosisMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-8 md:col-span-10">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+      </div>
+
+      <span class="delete-diagnosis col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+
+    </div>
+    `;
+    $('.diagnosis-comments-container').append(diagnosisMarkUp);
+
+    $('.delete-diagnosis').on('click' , function() {
+      $(this).parent().remove();
+    });
+  });
+
+  $('.add-plan-sec').on('click' , function(event) {
+    event.preventDefault();
+    let planMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-8 md:col-span-10">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+      </div>
+
+      <span class="delete-plan col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+
+    </div>
+    `;
+    $('.plan-comments-container').append(planMarkUp);
+
+    $('.delete-plan').on('click' , function() {
+      $(this).parent().remove();
+    });
+  });
+
+  // END:: DOCTOR INFO PAGE
 
   // CLOSE NOTIFICATIONS
   $("#close-notification").on('click' , function(){
