@@ -1,7 +1,10 @@
 <?php include("layouts/header.php") ?>
 
-<div class="intro-y flex items-center pt-5 h-10">
+<div class="intro-y flex justify-between	 items-center pt-5 h-10">
   <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Patient Report With Visits</h2>
+  <button type="submit" class="print print-tables button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+    <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Print 
+  </button>
 </div>
 
 <div class="intro-y box px-5 pt-5 pb-5 mt-5 mb-5">

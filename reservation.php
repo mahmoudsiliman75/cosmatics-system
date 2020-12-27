@@ -215,25 +215,19 @@
         <input type="text" class="input w-full border mt-2" placeholder="Patient History Comments"> 
       </div>
 
-      <div class="grid grid-cols-12 gap-6 col-span-12 lg:flex-row pl-5 pr-5 mt-2 -mx-5">
 
-        <div class="col-span-10">
-          <label class="text-gray-600 mb-3 text-lg">Chronic Diseases</label>
-          <select data-placeholder="Select The Chronic Disease" data-search="true" class="chronic-diseases-selector tail-select w-full" multiple>
-            <option value="0"> Chronic Disease 1 </option>
-            <option value="1">Chronic Disease 2</option>
-            <option value="2">Chronic Disease 3</option>
-            <option value="3">Chronic Disease 4</option>
-            <option value="4">Chronic Disease 5</option>
-            <option value="5">Chronic Disease 6</option>
-            <option value="6">Chronic Disease 7</option>
-          </select>
-        </div>
-
-        <div class="col-span-2">
-          <button class="add-sec w-full button translate-y-3 mr-2 flex items-center justify-center bg-theme-1 text-white" style="margin-top: 25px"> Add </button>
-        </div>
-      </div> 
+      <div class="col-span-12">
+        <label class="text-gray-600 mb-3 text-lg">Chronic Diseases</label>
+        <select data-placeholder="Select The Chronic Disease" data-search="true" class="chronic-diseases-selector tail-select w-full" multiple>
+          <option value="0"> Chronic Disease 1 </option>
+          <option value="1">Chronic Disease 2</option>
+          <option value="2">Chronic Disease 3</option>
+          <option value="3">Chronic Disease 4</option>
+          <option value="4">Chronic Disease 5</option>
+          <option value="5">Chronic Disease 6</option>
+          <option value="6">Chronic Disease 7</option>
+        </select>
+      </div>
 
       <div class="comments-container col-span-12 lg:flex-row px-5 -mx-5 ">
       </div> 

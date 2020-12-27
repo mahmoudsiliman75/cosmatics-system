@@ -75,8 +75,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.add-sec').on('click' , (event) => {
-    event.preventDefault();
+  $('.chronic-diseases-selector').on('change', function () {
     let myMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
 
@@ -95,11 +94,12 @@ $(document).ready(function () {
       $(this).parent().remove();
     });
   });
+
   // END:: RESERVATION PAGE
 
   // START:: DOCTOR INFO PAGE
-  $('.add-complaints-sec').on('click' , (event) => {
-    event.preventDefault();
+
+  $('.complaints-selector').on('change', function () {
     let complaintsMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
 
@@ -119,8 +119,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.add-examination-sec').on('click' , (event) => {
-    event.preventDefault();
+  $('.examination-selector').on('change', function () {
     let examinationMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
 
@@ -140,8 +139,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.add-diagnosis-sec').on('click' , (event) => {
-    event.preventDefault();
+  $('.diagnosis-selector').on('change', function () {
     let diagnosisMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
 
@@ -161,8 +159,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.add-plan-sec').on('click' , (event) => {
-    event.preventDefault();
+  $('.plan-selector').on('change', function () {
     let planMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
 
@@ -184,7 +181,7 @@ $(document).ready(function () {
   // END:: DOCTOR INFO PAGE
 
   // START:: INVESTIGATIONS PAGE
-  $('.add-investigation-sec').on('click' , (event) => {
+  $('.hamboly').on('change', function (event) {
     event.preventDefault();
     let planMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
@@ -212,8 +209,7 @@ $(document).ready(function () {
   // END:: INVESTIGATIONS PAGE
 
   // START:: PROCEDURES PAGE
-  $('.add-main-surgent-sec').on('click' , (event) => {
-    event.preventDefault();
+  $('.surgent-selector').on('change', function () {
     let mainSurgentMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
 
@@ -233,8 +229,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.add-assistant-sec').on('click' , (event) => {
-    event.preventDefault();
+  $('.assistant-selector').on('change', function () {
     let assistantMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
 
@@ -254,8 +249,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.add-anesthesia-sec').on('click' , (event) => {
-    event.preventDefault();
+  $('.anesthesia-selector').on('change', function () {
     let anesthesiaMarkUp = `
     <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
 
@@ -309,4 +303,9 @@ $(document).ready(function () {
   $('.hospital-other').on( 'input', calculateProfit );  
   // END:: PROCEDURED FINANCIALS PAGE
 
+  // START:: PRINT BUTTON
+  $('.print-tables').on('click', function () {
+    window.print();
+  });
+  // END:: PRINT BUTTON
 });

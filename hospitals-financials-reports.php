@@ -89,7 +89,7 @@
             <div class="intro-y box pb-3" style="z-index:1">
               <div class="sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
               
-                <form class="flex mr-auto grid grid-cols-12 gap-6" id="tabulator-html-filter-form">
+                <form class="print flex mr-auto grid grid-cols-12 gap-6" id="tabulator-html-filter-form">
 
                   <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 mt-2">
                     <label class="text-gray-600 mb-3 text-lg">Sarch For</label>
@@ -115,7 +115,7 @@
                       <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Patient Fees</th> 
                       <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Hospital Fees</th> 
                       <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Doctor Profits</th> 
-                      <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Actions</th> 
+                      <th class="print border-b-2 dark:border-dark-5 whitespace-no-wrap">Actions</th> 
                     </tr> 
                   </thead> 
 
@@ -128,7 +128,7 @@
                       <td class="border-b dark:border-dark-5"> 20000 </td>
                       <td class="border-b dark:border-dark-5"> 30000 </td> 
 
-                      <td class="border-b dark:border-dark-5 whitespace-no-wrap">
+                      <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
 
                         <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
                           <a href="#" class="w-5 h-5 flex items-center justify-center"> 
@@ -154,7 +154,7 @@
                       <td class="border-b dark:border-dark-5"> 20000 </td>
                       <td class="border-b dark:border-dark-5"> 30000 </td> 
 
-                      <td class="border-b dark:border-dark-5 whitespace-no-wrap">
+                      <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
 
                         <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
                           <a href="#" class="w-5 h-5 flex items-center justify-center"> 
@@ -173,6 +173,9 @@
                     </tr>
                   </tbody> 
                 </table> 
+                <button type="submit" class="print print-tables button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+                  <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Print 
+                </button>
               </div> 
 
             </div>

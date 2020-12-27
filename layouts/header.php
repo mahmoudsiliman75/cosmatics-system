@@ -2,27 +2,24 @@
 <html lang="en" class="light">
 <!-- BEGIN: Head -->
 <head>
-    <meta charset="utf-8">
-    <link href="dist/images/icon.png" rel="shortcut icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="LEFT4CODE">
-		<title>Cosmatics DashBoard</title>
-		<!-- BEGIN: Google Fonts -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap">
-		<!-- BEGIN: Google Fonts -->
+	<meta charset="utf-8">
+	<link href="dist/images/icon.png" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+	<meta name="keywords" content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+	<meta name="author" content="LEFT4CODE">
+	<title>Cosmatics DashBoard</title>
+	<!-- BEGIN: Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap">
+	<!-- BEGIN: Google Fonts -->
 
 
-    <!-- BEGIN: CSS Assets-->
-    <link rel="stylesheet" href="dist/css/app.css" />
-    <link rel="stylesheet" href="dist/css/custom-style.css" />
-	
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-
-
-    <!-- END: CSS Assets-->
+	<!-- BEGIN: CSS Assets-->
+	<link rel="stylesheet" href="dist/css/app.css" />
+	<link rel="stylesheet" href="dist/css/custom-style.css" />
+	<link rel="stylesheet" href="dist/css/print.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+	<!-- END: CSS Assets-->
 </head>
 <!-- END: Head -->
 <body class="app">

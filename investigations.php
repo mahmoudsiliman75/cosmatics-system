@@ -8,11 +8,9 @@
   <form id="add-patient">
     <div class="grid grid-cols-12 gap-6">
 
-      <div class="grid grid-cols-12 gap-6 col-span-12 lg:flex-row pl-5 pr-5 mt-2 -mx-5">
-
-        <div class="col-span-10">
+        <div class="col-span-12">
           <label class="text-gray-600 mb-3 text-lg">Investigations</label>
-          <select data-placeholder="Select Investigation" data-search="true" class="tail-select w-full" multiple>
+          <select data-placeholder="Select Investigation" data-search="true" class="tail-select w-full hamboly" multiple>
             <option value="0">Investigation 1 </option>
             <option value="1">Investigation 2</option>
             <option value="2">Investigation 3</option>
@@ -22,12 +20,6 @@
             <option value="6">Investigation 7</option>
           </select>
         </div>
-
-        <div class="col-span-2">
-          <button class="add-investigation-sec w-full button translate-y-3 mr-2 flex items-center justify-center bg-theme-1 text-white" style="margin-top: 25px"> Add </button>
-        </div>
-
-      </div> 
 
       <div class="investigation-comments-container col-span-12 lg:flex-row px-5 -mx-5 ">
       </div>

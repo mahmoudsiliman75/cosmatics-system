@@ -27,69 +27,50 @@
         </select>
       </div>
 
-      <div class="grid grid-cols-12 gap-6 col-span-12 lg:flex-row pl-5 pr-5 mt-2 -mx-5">
-
-        <div class="col-span-10">
-          <label class="text-gray-600 mb-3 text-lg">Main Surgent</label>
-          <select data-placeholder="Select Main Surgent" data-search="true" class="tail-select w-full" multiple>
-            <option value="0">Main Surgent 1 </option>
-            <option value="1">Main Surgent 2</option>
-            <option value="2">Main Surgent 3</option>
-            <option value="3">Main Surgent 4</option>
-            <option value="4">Main Surgent 5</option>
-            <option value="5">Main Surgent 6</option>
-            <option value="6">Main Surgent 7</option>
-          </select>
-        </div>
-
-        <div class="col-span-2">
-          <button class="add-main-surgent-sec w-full button translate-y-3 mr-2 flex items-center justify-center bg-theme-1 text-white" style="margin-top: 25px"> Add </button>
-        </div>
-      </div> 
+      <div class="col-span-12">
+        <label class="text-gray-600 mb-3 text-lg">Main Surgent</label>
+        <select data-placeholder="Select Main Surgent" data-search="true" class="surgent-selector tail-select w-full" multiple>
+          <option value="0">Main Surgent 1 </option>
+          <option value="1">Main Surgent 2</option>
+          <option value="2">Main Surgent 3</option>
+          <option value="3">Main Surgent 4</option>
+          <option value="4">Main Surgent 5</option>
+          <option value="5">Main Surgent 6</option>
+          <option value="6">Main Surgent 7</option>
+        </select>
+      </div>
 
       <div class="main-surgent-comments-container col-span-12 lg:flex-row px-5 -mx-5 ">
       </div> 
 
-      <div class="grid grid-cols-12 gap-6 col-span-12 lg:flex-row pl-5 pr-5 mt-2 -mx-5">
-        <div class="col-span-10">
-          <label class="text-gray-600 mb-3 text-lg">Assistant</label>
-          <select data-placeholder="Select Assistants" data-search="true" class="tail-select w-full" multiple>
-            <option value="0">Assistant 1 </option>
-            <option value="1">Assistant 2</option>
-            <option value="2">Assistant 3</option>
-            <option value="3">Assistant 4</option>
-            <option value="4">Assistant 5</option>
-            <option value="5">Assistant 6</option>
-            <option value="6">Assistant 7</option>
-          </select>
-        </div>
-
-        <div class="col-span-2">
-          <button class="add-assistant-sec w-full button translate-y-3 mr-2 flex items-center justify-center bg-theme-1 text-white" style="margin-top: 25px"> Add </button>
-        </div>
-      </div> 
+      <div class="col-span-12">
+        <label class="text-gray-600 mb-3 text-lg">Assistant</label>
+        <select data-placeholder="Select Assistants" data-search="true" class="assistant-selector tail-select w-full" multiple>
+          <option value="0">Assistant 1 </option>
+          <option value="1">Assistant 2</option>
+          <option value="2">Assistant 3</option>
+          <option value="3">Assistant 4</option>
+          <option value="4">Assistant 5</option>
+          <option value="5">Assistant 6</option>
+          <option value="6">Assistant 7</option>
+        </select>
+      </div>
 
       <div class="assistant-comments-container col-span-12 lg:flex-row px-5 -mx-5 ">
       </div> 
 
-      <div class="grid grid-cols-12 gap-6 col-span-12 lg:flex-row pl-5 pr-5 mt-2 -mx-5">
-        <div class="col-span-10">
-          <label class="text-gray-600 mb-3 text-lg">Type Of Anesthesia</label>
-          <select data-placeholder="Select Type Of Anesthesia" data-search="true" class="tail-select w-full" multiple>
-            <option value="0">Type 1 </option>
-            <option value="1">Type 2</option>
-            <option value="2">Type 3</option>
-            <option value="3">Type 4</option>
-            <option value="4">Type 5</option>
-            <option value="5">Type 6</option>
-            <option value="6">Type 7</option>
-          </select>
-        </div>
-
-        <div class="col-span-2">
-          <button class="add-anesthesia-sec w-full button translate-y-3 mr-2 flex items-center justify-center bg-theme-1 text-white" style="margin-top: 25px"> Add </button>
-        </div>
-      </div> 
+      <div class="col-span-12">
+        <label class="text-gray-600 mb-3 text-lg">Type Of Anesthesia</label>
+        <select data-placeholder="Select Type Of Anesthesia" data-search="true" class="anesthesia-selector tail-select w-full" multiple>
+          <option value="0">Type 1 </option>
+          <option value="1">Type 2</option>
+          <option value="2">Type 3</option>
+          <option value="3">Type 4</option>
+          <option value="4">Type 5</option>
+          <option value="5">Type 6</option>
+          <option value="6">Type 7</option>
+        </select>
+      </div>
 
       <div class="anesthesia-comments-container col-span-12 lg:flex-row px-5 -mx-5 ">
       </div>
