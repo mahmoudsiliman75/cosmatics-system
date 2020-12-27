@@ -38,6 +38,9 @@
 
 <div class="intro-y box px-5 pt-5 pb-5 mt-5 mb-5">
   <div class="overflow-x-auto p-5"> 
+    <button type="submit" class="print print-tables button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+      <i data-feather="printer" class="w-4 h-4 mr-2  ml-2"></i> Print 
+    </button>
     <table class="table"> 
       <thead> 
         <tr class="bg-gray-200 dark:bg-dark-1"> 
@@ -60,9 +63,7 @@
 
       </tbody> 
     </table> 
-    <button type="submit" class="print print-tables button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
-      <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Print 
-    </button>
+
   </div> 
 </div>
 

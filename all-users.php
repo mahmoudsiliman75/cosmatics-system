@@ -1,7 +1,7 @@
 <?php include("layouts/header.php") ?>
 
 <div class="intro-y flex items-center pt-5 h-10">
-  <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Surgeries Financial Report</h2>
+  <h2 class="text-lg font-medium text-gray-600 truncate mr-5">All Users</h2>
 </div>
 
 <div class="mt-5">
@@ -18,14 +18,18 @@
 
         <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-2 mt-1">
           <button type="button" class="button text-center w-11 h-11 bg-theme-1 text-white mx-2 mt-8" id="">
-            <i data-feather="printer" class="w-5 h-5 text-center"></i> 
+            <i data-feather="search" class="w-5 h-5 text-center"></i> 
           </button>
         </div>
 
       </form>
 
       <button type="submit" class="print print-tables button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
-        <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Print 
+        <i data-feather="printer" class="w-4 h-4 mr-2  ml-2"></i> Print 
+      </button>
+
+      <button type="submit" class="print button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+        <a href="add-user.php" class="w-full"> <i data-feather="plus" class="inline w-4 h-4 mr-2  ml-2"></i> Add User </a>
       </button>
 
     </div>
@@ -35,12 +39,9 @@
         <thead> 
           <tr class="bg-gray-200 dark:bg-dark-1"> 
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">#</th> 
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Surgery Type</th> 
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Number</th>
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Patients</th>
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Patient Fees</th> 
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Hospital Fees</th> 
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Doctor Profits</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Name</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Role</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">salary</th> 
             <th class="print border-b-2 dark:border-dark-5 whitespace-no-wrap">Actions</th> 
           </tr> 
         </thead> 
@@ -48,12 +49,33 @@
         <tbody> 
           <tr> 
             <td class="border-b dark:border-dark-5">1</td> 
-            <td class="border-b dark:border-dark-5">Type 1</td> 
-            <td class="border-b dark:border-dark-5"> 30 </td> 
-            <td class="border-b dark:border-dark-5"> 30 </td> 
-            <td class="border-b dark:border-dark-5"> 50000 </td>
-            <td class="border-b dark:border-dark-5"> 20000 </td>
-            <td class="border-b dark:border-dark-5"> 30000 </td> 
+            <td class="border-b dark:border-dark-5">Name 1</td> 
+            <td class="border-b dark:border-dark-5"> Doctor </td> 
+            <td class="border-b dark:border-dark-5"> 15000 </td> 
+
+            <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
+
+              <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
+                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
+                  <i data-feather="edit" class="w-4 h-4"></i> 
+                </a> 
+              </button>
+
+              <button class="button px-2 mr-1 mb-2 bg-theme-6 text-white tooltip" title="Delete"> 
+                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
+                  <i data-feather="trash" class="w-4 h-4"></i> 
+                </a> 
+              </button>
+
+            </td> 
+
+          </tr>
+
+          <tr> 
+            <td class="border-b dark:border-dark-5">2</td> 
+            <td class="border-b dark:border-dark-5">Name 2</td> 
+            <td class="border-b dark:border-dark-5"> Receptionist </td> 
+            <td class="border-b dark:border-dark-5"> 5000 </td> 
 
             <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
 
@@ -73,7 +95,6 @@
 
           </tr>
         </tbody> 
-
       </table> 
 
     </div> 
@@ -81,5 +102,6 @@
   </div>
   <!-- END: Table Data -->
 </div>
+
 
 <?php include("layouts/footer.php") ?>

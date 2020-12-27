@@ -87,7 +87,7 @@
           <div class="mt-5">
             <!-- BEGIN: Table Data -->
             <div class="intro-y box pb-3" style="z-index:1">
-              <div class="sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
+              <div class="flex sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
               
                 <form class="print flex mr-auto grid grid-cols-12 gap-6" id="tabulator-html-filter-form">
 
@@ -103,6 +103,11 @@
                   </div>
 
                 </form>
+
+                <button type="submit" class="print print-tables button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+                  <i data-feather="printer" class="w-4 h-4 mr-2  ml-2"></i> Print 
+                </button>
+
               </div>
 
               <div class="overflow-x-auto p-5"> 
@@ -173,9 +178,7 @@
                     </tr>
                   </tbody> 
                 </table> 
-                <button type="submit" class="print print-tables button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
-                  <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Print 
-                </button>
+
               </div> 
 
             </div>

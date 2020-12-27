@@ -56,7 +56,9 @@
 					<div class="menu__icon"> <i class="ml-3" data-feather="user"></i> </div>
 					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Profile </span> </div>
 				</a>
-			</li>
+      </li>
+      
+
 
 			<li>
 				<a href="edit-profile.php" class="menu">
@@ -199,6 +201,13 @@
 				<a href="system-settings.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="settings"></i> </div>
 					<div class="side-menu__title"> System Settings </div>
+				</a>
+      </li>
+
+      <li>
+				<a href="all-users.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
+					<div class="side-menu__title"> All Users </div>
 				</a>
 			</li>
 

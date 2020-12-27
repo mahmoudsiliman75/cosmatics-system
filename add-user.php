@@ -4,7 +4,7 @@
 
 
 
-      <div class="grid grid-cols-12 gap-6 intro-y box px-5 mt-5 m-0 flex flex-col col-span-12 sm:col-span-12 lg:col-span-12 lg:flex-row p-5">
+      <div class="grid grid-cols-12 gap-6 intro-y box px-5 mt-5 m-0 col-span-12 sm:col-span-12 lg:col-span-12 lg:flex-row py-2 px-5">
         
 
         <div class="intro-y box px-5 pt-5 mt-5 col-span-12">
@@ -27,52 +27,47 @@
           </div>
         </div>
 
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 -mx-5">
+          <div class="col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row py-2 px-5 -mx-5">
+            <label class="text-gray-600 mb-3 text-lg">Name</label>
             <input type="text" class="input w-full border mt-2" placeholder="Name"> 
           </div>
 
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 -mx-5">
-            <input type="text" class="input w-full border mt-2" placeholder="ID"> 
-          </div>
-
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 -mx-5">
+          <div class="col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row py-2 px-5 -mx-5">
+            <label class="text-gray-600 mb-3 text-lg">Phone Number</label>
             <input type="text" class="input w-full border mt-2" placeholder="Phone Number"> 
           </div>
 
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 mt-2 -mx-5">
+          <div class="col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row py-2 px-5 mt-2 -mx-5">
+            <label class="text-gray-600 mb-3 text-lg">Role</label>
             <select data-search="true" class="tail-select w-full">
-              <option value="1">Select Role</option>
-              <option value="2">Doctor</option>
-              <option value="3">Receptionest</option>
+              <option>Select Role</option>
+              <option value="0">Doctor</option>
+              <option value="1">Receptionest</option>
             </select> 
           </div>
 
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 -mx-5">
+          <div class="col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row py-2 px-5 -mx-5">
+            <label class="text-gray-600 mb-3 text-lg">Address</label>
             <input type="text" class="input w-full border mt-2" placeholder="Address"> 
           </div>
 
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 mt-2 -mx-5">
-            <select data-search="true" class="tail-select w-full">
-              <option value="1">Clinic</option>
-              <option value="2">Clinic 1</option>
-              <option value="3">Clinic 2</option>
-              <option value="4">Clinic 3</option>
-            </select> 
-          </div>
-
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 -mx-5">
-            <input type="text" class="input w-full border mt-2" placeholder="Salary"> 
-          </div>
-
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 -mx-5">
+          <div class="col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row py-2 px-5 -mx-5">
+            <label class="text-gray-600 mb-3 text-lg">Email</label>
             <input type="email" class="input w-full border mt-2" placeholder="Email"> 
           </div>
 
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 -mx-5">
+          <div class="col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row py-2 px-5 -mx-5">
+            <label class="text-gray-600 mb-3 text-lg">Salary</label>
+            <input type="text" class="input w-full border mt-2" placeholder="Salary"> 
+          </div>
+
+          <div class="col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row py-2 px-5 -mx-5">
+            <label class="text-gray-600 mb-3 text-lg">Password</label>
             <input type="password" class="input w-full border mt-2" placeholder="Password"> 
           </div>
 
-          <div class="flex flex-col col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row p-5 -mx-5">
+          <div class="col-span-12 sm:col-span-12 lg:col-span-4 lg:flex-row py-2 px-5 -mx-5">
+            <label class="text-gray-600 mb-3 text-lg">Confirm Password</label>
             <input type="password" class="input w-full border mt-2" placeholder="Confirm Password"> 
           </div>
 
