@@ -196,7 +196,9 @@ $(document).ready(function () {
         <input name="file" type="file" class="input w-full border mt-2" style="padding: 4px;" multiple /> 
       </div>
 
-      <span class="delete-investigation col-span-4 md:col-span-1 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete-investigation font-black col-span-4 md:col-span-1 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> 
+        X 
+      </span>
 
     </div>
     `;
