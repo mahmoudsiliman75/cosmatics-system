@@ -2,7 +2,7 @@
 
 <div class="intro-y flex items-center pt-5 h-10 mb-5">
   <h2 class="text-lg font-medium text-gray-600 truncate mr-5">
-    <span class="text-purple-700 font-black">(Angelina)</span> Financial Report
+    <span class="text-purple-700 font-black">(Name 2)</span> Financial Report
   </h2>
 </div>
 
@@ -33,7 +33,7 @@
           </svg>
         </div>
         <div class="text-lg text-gray-600 mt-1">Payment Method </div>
-        <div class="text-2xl font-bold leading-8 mt-3">Installments</div>
+        <div class="text-2xl font-bold leading-8 mt-3">Cash</div>
       </div>
     </div>
   </div>
@@ -67,34 +67,6 @@
   </div>
   <!-- END:: PATIENT FINANCIALS DETAILS CARD -->
 
-  <!-- START:: PATIENT FINANCIALS DETAILS CARD -->
-  <div class="col-span-12 sm:col-span-6 intro-y">
-    <div class="report-box text-center">
-      <div class="box p-5" style="min-height: 145px;">
-        <div class="flex justify-center">
-          <i data-feather="calendar" class="text-4xl font-black text-green-600"></i>
-        </div>
-        <div class="text-lg text-gray-600 mt-1"> Number Of Monthes </div>
-        <div class="text-2xl font-bold leading-8 mt-3">5</div>
-      </div>
-    </div>
-  </div>
-  <!-- END:: PATIENT FINANCIALS DETAILS CARD -->
-
-  <!-- START:: PATIENT FINANCIALS DETAILS CARD -->
-  <div class="col-span-12 sm:col-span-6 intro-y">
-    <div class="report-box text-center">
-      <div class="box p-5" style="min-height: 145px;">
-        <div class="flex justify-center">
-          <i data-feather="bookmark" class="text-4xl font-black text-green-600"></i>
-        </div>
-        <div class="text-lg text-gray-600 mt-1"> Monthly Fees </div>
-        <div class="text-2xl font-bold leading-8 mt-3">4000</div>
-      </div>
-    </div>
-  </div>
-  <!-- END:: PATIENT FINANCIALS DETAILS CARD -->
-
 </div>
 
 <div class="mt-5">
@@ -112,8 +84,9 @@
         <thead> 
           <tr class="bg-gray-200 dark:bg-dark-1"> 
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">#</th> 
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Month</th> 
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Monthly Fees</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Down payment</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Remaining Fees</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Collected Fees</th> 
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Status</th> 
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Actions</th> 
           </tr> 
@@ -122,80 +95,13 @@
         <tbody> 
           <tr> 
             <td class="border-b dark:border-dark-5">1</td> 
-            <td class="border-b dark:border-dark-5">October</td> 
-            <td class="border-b dark:border-dark-5">4000</td> 
-            <td class="border-b dark:border-dark-5">
-              <div class="flex items-center text-theme-9"> 
-                <i data-feather="dollar-sign" class="text-base mr-1" style="font-size: 15px;"></i>
-                Paied 
-              </div>
-            </td> 
-            <td class="border-b dark:border-dark-5">
-              <a href="javascript:;" data-toggle="modal" data-target="#large-modal-size-preview" class="button mr-1 mb-2 inline-block bg-theme-1 text-white">
-                Collect Fees
-              </a> 
-            </td> 
-          </tr>
-
-          <tr> 
-            <td class="border-b dark:border-dark-5">2</td> 
-            <td class="border-b dark:border-dark-5">November</td> 
-            <td class="border-b dark:border-dark-5">4000</td> 
+            <td class="border-b dark:border-dark-5">10000</td> 
+            <td class="border-b dark:border-dark-5">20000</td> 
+            <td class="border-b dark:border-dark-5">10000</td> 
             <td class="border-b dark:border-dark-5">
               <div class="flex items-center font-black text-red-700"> 
                 <i data-feather="alert-octagon" class="text-base mr-1" style="font-size: 15px;"></i>
-                Not Paied 
-              </div>
-            </td> 
-            <td class="border-b dark:border-dark-5">
-              <a href="javascript:;" data-toggle="modal" data-target="#large-modal-size-preview" class="button mr-1 mb-2 inline-block bg-theme-1 text-white">
-                Collect Fees
-              </a> 
-            </td> 
-          </tr>
-
-          <tr> 
-            <td class="border-b dark:border-dark-5">3</td> 
-            <td class="border-b dark:border-dark-5">December</td> 
-            <td class="border-b dark:border-dark-5">4000</td> 
-            <td class="border-b dark:border-dark-5">
-              <div class="flex items-center font-black text-red-700"> 
-                <i data-feather="alert-octagon" class="text-base mr-1" style="font-size: 15px;"></i>
-                Not Paied 
-              </div>
-            </td> 
-            <td class="border-b dark:border-dark-5">
-              <a href="javascript:;" data-toggle="modal" data-target="#large-modal-size-preview" class="button mr-1 mb-2 inline-block bg-theme-1 text-white">
-                Collect Fees
-              </a> 
-            </td> 
-          </tr>
-
-          <tr> 
-            <td class="border-b dark:border-dark-5">4</td> 
-            <td class="border-b dark:border-dark-5">January</td> 
-            <td class="border-b dark:border-dark-5">4000</td> 
-            <td class="border-b dark:border-dark-5">
-              <div class="flex items-center font-black text-red-700"> 
-                <i data-feather="alert-octagon" class="text-base mr-1" style="font-size: 15px;"></i>
-                Not Paied 
-              </div>
-            </td> 
-            <td class="border-b dark:border-dark-5">
-              <a href="javascript:;" data-toggle="modal" data-target="#large-modal-size-preview" class="button mr-1 mb-2 inline-block bg-theme-1 text-white">
-                Collect Fees
-              </a> 
-            </td> 
-          </tr>
-
-          <tr> 
-            <td class="border-b dark:border-dark-5">5</td> 
-            <td class="border-b dark:border-dark-5">February</td> 
-            <td class="border-b dark:border-dark-5">4000</td> 
-            <td class="border-b dark:border-dark-5">
-              <div class="flex items-center font-black text-red-700"> 
-                <i data-feather="alert-octagon" class="text-base mr-1" style="font-size: 15px;"></i>
-                Not Paied 
+                Collect Remaining 
               </div>
             </td> 
             <td class="border-b dark:border-dark-5">
@@ -213,12 +119,12 @@
         <div class="modal__content modal__content--lg py-5 px-10">
 
             <h2 class="text-lg font-medium text-center text-gray-600 truncate mr-5 mb-3 col-span-12">
-              Collect Monthly Fees
+              Collect Remaining Fees
             </h2>
             <form action="" class="grid grid-cols-12 gap-6 mb-5">
               <div class="col-span-12 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-                <label class="text-gray-600 mb-3 text-lg">Monthly Fees</label>
-                <input type="text" class="input pl-12 border w-full" placeholder="Monthly Fees">
+                <label class="text-gray-600 mb-3 text-lg">Remaining Fees</label>
+                <input type="text" class="input pl-12 border w-full" placeholder="Remaining Fees">
                 <button type="submit" class="button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
                   <i data-feather="plus" class="w-4 h-4 mr-2  ml-2"></i> Collect 
                 </button>

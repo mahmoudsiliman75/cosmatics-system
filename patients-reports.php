@@ -77,6 +77,47 @@
 
           </tr>
 
+          <tr> 
+            <td class="border-b dark:border-dark-5">2</td> 
+
+            <td class="border-b dark:border-dark-5">Name 2</td> 
+
+            <td class="border-b dark:border-dark-5 whitespace-no-wrap">
+
+              <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Financial Report"> 
+                <a href="patient-financial-report-cash.php" class="w-5 h-5 flex items-center justify-center"> 
+                  <i data-feather="dollar-sign" class="w-4 h-4"></i> 
+                </a> 
+              </button>
+
+              <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History Without Visits" > 
+                <a href="patient-history-without-visits.php" class="w-5 h-5 flex items-center justify-center"> 
+                  <i data-feather="hard-drive" class="w-4 h-4"></i> 
+                </a> 
+              </button>
+
+              <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History With Visits" > 
+                <a href="patient-history-with-visites.php" class="w-5 h-5 flex items-center justify-center"> 
+                  <i data-feather="hard-drive" class="w-4 h-4"></i> 
+                </a> 
+              </button>
+
+              <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
+                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
+                  <i data-feather="edit" class="w-4 h-4"></i> 
+                </a> 
+              </button>
+
+              <button class="button px-2 mr-1 mb-2 bg-theme-6 text-white tooltip" title="Delete"> 
+                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
+                  <i data-feather="trash" class="w-4 h-4"></i> 
+                </a> 
+              </button>
+
+            </td> 
+
+          </tr>
+
         </tbody> 
       </table> 
     </div> 
