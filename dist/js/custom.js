@@ -2,15 +2,15 @@ $(document).ready(function () {
 
   // SELECT PROFILE IMG
   $(".image").on('change', function() {
-    if (this.files && this.files[0]) {
-      var reader = new FileReader();
+  if (this.files && this.files[0]) {
+    var reader = new FileReader();
 
-      reader.onload = (e) => {
-        $('.image-preview').attr('src', e.target.result);
-      }
-
-      reader.readAsDataURL(this.files[0]);
+    reader.onload = (e) => {
+      $('.image-preview').attr('src', e.target.result);
     }
+
+    reader.readAsDataURL(this.files[0]);
+  };
 });
 
   // START:: RESERVATION PAGE
@@ -283,13 +283,21 @@ $(document).ready(function () {
   // END:: PROCEDURES PAGE
 
   // START:: PROCEDURED FINANCIALS PAGE
-  $('#installments-fees').css('visibility' , 'hidden');
+  // $('#total-fees').css('visibility' , 'hidden');
+  $('#number-of-monthes').css('display', 'none');
+  $('#monthly-fees').css('display', 'none');
+
+
   $('#payment-status').on('change', () => {
     let statusOptionValue = $('#payment-status').children('option:checked').val();
     if ( statusOptionValue == 0 ) {
-      $('#installments-fees').css('visibility' , 'hidden');
+      // $('#installments-fees').css('visibility' , 'hidden');
+      $('#number-of-monthes').css('display' , 'none');
+      $('#monthly-fees').css('display' , 'none');
     } else if ( statusOptionValue == 1 ) {
-      $('#installments-fees').css('visibility' , 'visible');
+      // $('#installments-fees').css('visibility' , 'visible');
+      $('#number-of-monthes').css('display' , 'block');
+      $('#monthly-fees').css('display' , 'block');
     }
   })
 
@@ -298,11 +306,34 @@ $(document).ready(function () {
     let hospitalFees = parseInt( $('.hospital-fees').val() );
     let hospitalOthers = parseInt( $('.hospital-other').val() );
     $('.total-profets').val(procedresFees - (hospitalFees + hospitalOthers));
-  }
-
+  };
   $('.procedure-fees').on( 'input', calculateProfit );
   $('.hospital-fees').on( 'input', calculateProfit );
-  $('.hospital-other').on( 'input', calculateProfit );  
+  $('.hospital-other').on( 'input', calculateProfit ); 
+
+  let calcRemainingFees = () => {
+    let procedresFees = parseInt( $('.procedure-fees').val() ) ;
+    let paidAmmount = parseInt( $('.paid-amount').val() ) ;
+    $('.remaining-fees').val( procedresFees - paidAmmount );
+    let theRemainingFees = $('.remaining-fees').val();
+    return parseInt(theRemainingFees);
+  };
+  $('.procedure-fees').on('input', calcRemainingFees);
+  $('.paid-amount').on('input', calcRemainingFees);
+
+  // START:: CALCULATING INSTALLMENT MONTHLY FEES
+  let calcMonthlyFees = () => {
+    let remainingFees = calcRemainingFees() ;
+    let numberOfMonthes = parseInt( $('.number-of-monthes').val() ) ;
+    // console.log("div "+remainingFees / numberOfMonthes)
+    // console.log("remaining "+remainingFees )
+    // console.log( "num of mu "+numberOfMonthes)
+    $('.monthly-fees').val(remainingFees / numberOfMonthes);
+  };
+  $('.procedure-fees').on("input", calcMonthlyFees);
+  $('.number-of-monthes').on("input", calcMonthlyFees);
+  // END:: CALCULATING INSTALLMENT MONTHLY FEES
+
   // END:: PROCEDURED FINANCIALS PAGE
 
   // START:: PRINT BUTTON

@@ -52,26 +52,26 @@
 
       <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Paid Amount</label>
-        <input type="text" class="input w-full border" placeholder="Paid Amount"> 
+        <input type="text" class="paid-amount input w-full border" placeholder="Paid Amount" value="0"> 
       </div>
 
-      <div id="installments-fees" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
-        <label class="text-gray-600 mb-3 text-lg"> Total Fees </label>
-        <input type="text" class="input w-full border" placeholder="Total Fees"> 
+      <div id="total-fees" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
+        <label class="text-gray-600 mb-3 text-lg"> Total Remaining Fees </label>
+        <input type="text" class="remaining-fees input w-full border" placeholder="Total Remaining Fees" value="0" disabled> 
       </div>
 
-      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 lg:flex-row pr-3 pl-3 -mx-5">
+      <div id="number-of-monthes" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Number Of Monthes</label>
-        <input type="text" class="input w-full border" placeholder="Number Of Monthes"> 
+        <input type="text" class="number-of-monthes input w-full border" placeholder="Number Of Monthes" value="1"> 
       </div>
 
 
-      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 lg:flex-row pr-3 pl-3 -mx-5">
+      <div id="monthly-fees" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Fees For Each Month</label>
-        <input type="text" class="input w-full border" placeholder="Fees For Each Month"> 
+        <input type="text" class="monthly-fees input w-full border" placeholder="Fees For Each Month" value="0" disabled> 
       </div>
 
-      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 lg:flex-row pr-3 pl-3 -mx-5">
+      <!-- <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Payment Close</label>
         <select data-search="true" class="tail-select w-full">
           <option>Select Payment Close</option>
@@ -79,9 +79,9 @@
           <option value="1"> Option 2 </option>
           <option value="2"> Option 3 </option>
         </select>  
-      </div>
+      </div> -->
 
-      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 lg:flex-row pr-3 pl-3 -mx-5">
+      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Doctor Profits</label>
         <input type="text" class="total-profets input w-full border" placeholder="Doctor Profits" disabled> 
       </div>
