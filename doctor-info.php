@@ -8,6 +8,16 @@
   <form id="add-patient">
     <div class="grid grid-cols-12 gap-6">
 
+      <div class="col-span-12 md:col-span-4 flex items-center text-gray-700 dark:text-gray-500 ml-3"> 
+        <input type="checkbox" class="input border mr-2" id="patient-photo"> 
+        <label class=" cursor-pointer select-none text-gray-600 text-lg" for="patient-photo">Patient Photo Taken</label> 
+      </div>
+
+      <div class="col-span-12 md:col-span-4 flex items-center text-gray-700 dark:text-gray-500 ml-3"> 
+        <input type="checkbox" class="input border mr-2" id="consent-signed"> 
+        <label class="cursor-pointer select-none text-gray-600 text-lg" for="consent-signed">Consent Signed</label> 
+      </div>
+
       <div class="col-span-12">
         <label class="text-gray-600 mb-3 text-lg">Patient Complaints</label>
         <select data-placeholder="Select Patient Complaint" data-search="true" class="complaints-selector tail-select w-full" multiple>
