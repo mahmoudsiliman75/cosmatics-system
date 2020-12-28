@@ -7,7 +7,7 @@
 <div class="mt-5">
   <!-- BEGIN: Table Data -->
   <div class="intro-y box pb-3" style="z-index:1">
-    <div class="sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
+    <div class="flex sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
     
       <form class="flex mr-auto grid grid-cols-12 gap-6" id="tabulator-html-filter-form">
 
@@ -23,6 +23,13 @@
         </div>
 
       </form>
+
+      <button class="button p-0 mt-5 mr-5 ml-5 flex items-center justify-center bg-theme-1 text-white"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-square w-4 h-4 mr-2 ml-2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+        <a href="javascript:;" data-toggle="modal" data-target="#add-new-hospital" class="button inline-block bg-theme-1 text-white">
+          Add New Hospital
+        </a> 
+      </button>
     </div>
 
     <div class="overflow-x-auto p-5"> 
@@ -46,12 +53,23 @@
         </tbody> 
       </table> 
 
-      <button class="button p-0 mt-5 mr-5 ml-5 flex items-center justify-center bg-theme-1 text-white"> 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-square w-4 h-4 mr-2 ml-2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-        <a href="javascript:;" data-toggle="modal" data-target="#add-new-hospital" class="button inline-block bg-theme-1 text-white">
-          Add New Hospital
-        </a> 
-      </button>
+      <!-- START:: PAGINATION -->
+      <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
+        <ul class="pagination">
+          <li>
+            <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4"><polyline points="15 18 9 12 15 6"></polyline></svg> </a>
+          </li>
+
+          <li> <a class="pagination__link" href="">1</a> </li>
+          <li> <a class="pagination__link pagination__link--active" href="">2</a> </li>
+          <li> <a class="pagination__link" href="">3</a> </li>
+
+          <li>
+            <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-4 h-4"><polyline points="9 18 15 12 9 6"></polyline></svg> </a>
+          </li>
+        </ul>
+      </div>
+      <!-- START:: PAGINATION -->
 
       <div class="modal" id="add-new-hospital">
         <div class="modal__content p-10 text-center" style="width: 50%">
@@ -178,6 +196,24 @@
                     </tr>
                   </tbody> 
                 </table> 
+
+                <!-- START:: PAGINATION -->
+                <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
+                  <ul class="pagination">
+                    <li>
+                      <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4"><polyline points="15 18 9 12 15 6"></polyline></svg> </a>
+                    </li>
+
+                    <li> <a class="pagination__link" href="">1</a> </li>
+                    <li> <a class="pagination__link pagination__link--active" href="">2</a> </li>
+                    <li> <a class="pagination__link" href="">3</a> </li>
+
+                    <li>
+                      <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-4 h-4"><polyline points="9 18 15 12 9 6"></polyline></svg> </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- START:: PAGINATION -->
 
               </div> 
 

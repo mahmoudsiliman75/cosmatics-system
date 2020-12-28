@@ -7,7 +7,7 @@
 <div class="mt-5">
   <!-- BEGIN: Table Data -->
   <div class="intro-y box pb-3" style="z-index:1">
-    <div class="sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
+    <div class="flex sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
     
       <form class="flex mr-auto grid grid-cols-12 gap-6" id="tabulator-html-filter-form">
 
@@ -23,6 +23,13 @@
         </div>
 
       </form>
+
+      <button type="submit" class="button w-40 mr-5 ml-5 flex items-center justify-center bg-theme-1 text-white"> 
+        <i data-feather="plus-square" class="w-4 h-4 mr-2  ml-2"></i>
+        <a href="reservation.php">
+          <span> Add New Patient <span> 
+        </a>
+      </button>
     </div>
 
     <div class="overflow-x-auto p-5"> 
@@ -120,14 +127,26 @@
 
         </tbody> 
       </table> 
-    </div> 
 
-    <button type="submit" class="button w-40 mr-5 ml-5 flex items-center justify-center bg-theme-1 text-white"> 
-      <i data-feather="plus-square" class="w-4 h-4 mr-2  ml-2"></i>
-      <a href="reservation.php">
-        <span> Add New Patient <span> 
-      </a>
-    </button>
+      <!-- START:: PAGINATION -->
+      <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
+        <ul class="pagination">
+          <li>
+            <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4"><polyline points="15 18 9 12 15 6"></polyline></svg> </a>
+          </li>
+
+          <li> <a class="pagination__link" href="">1</a> </li>
+          <li> <a class="pagination__link pagination__link--active" href="">2</a> </li>
+          <li> <a class="pagination__link" href="">3</a> </li>
+
+          <li>
+            <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-4 h-4"><polyline points="9 18 15 12 9 6"></polyline></svg> </a>
+          </li>
+        </ul>
+      </div>
+      <!-- START:: PAGINATION -->
+
+    </div> 
 
   </div>
   <!-- END: Table Data -->

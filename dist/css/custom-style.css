@@ -15,6 +15,11 @@ html {
 button.bg-theme-1, 
 a.bg-theme-1 {
   background-color: #9571b8;
+} 
+
+.pagination__link--active {
+  background-color: #9571b8 !important;
+  color: #fff !important;
 }
 
 .input:focus {

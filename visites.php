@@ -64,6 +64,24 @@
       </tbody> 
     </table> 
 
+    <!-- START:: PAGINATION -->
+    <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
+      <ul class="pagination">
+        <li>
+          <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4"><polyline points="15 18 9 12 15 6"></polyline></svg> </a>
+        </li>
+
+        <li> <a class="pagination__link" href="">1</a> </li>
+        <li> <a class="pagination__link pagination__link--active" href="">2</a> </li>
+        <li> <a class="pagination__link" href="">3</a> </li>
+
+        <li>
+          <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-4 h-4"><polyline points="9 18 15 12 9 6"></polyline></svg> </a>
+        </li>
+      </ul>
+    </div>
+    <!-- START:: PAGINATION -->
+
   </div> 
 </div>
 
