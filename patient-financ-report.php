@@ -1,29 +1,34 @@
 <?php include("layouts/header.php") ?>
 
-<div class="intro-y flex items-center pt-5 h-10">
-  <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Patients Report</h2>
+<div class="intro-y flex items-center pt-5 h-10 mb-5">
+  <h2 class="text-lg font-medium text-gray-600 truncate mr-5">
+    <span class="text-purple-700 font-black">(Angelina)</span> Financial Report
+  </h2>
+</div>
+
+<div class="grid grid-cols-12 gap-6 mb-5">
+
+  <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+    <div class="report-box zoom-in">
+      <div class="box p-5">
+        <div class="flex">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor report-box__icon text-theme-12">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg> 
+        </div>
+        <div class="text-3xl font-bold leading-8 mt-6">2.145</div>
+        <div class="text-base text-gray-600 mt-1">Total Products</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <div class="mt-5">
-  <!-- BEGIN: Table Data -->
+
   <div class="intro-y box pb-3" style="z-index:1">
-    <div class="sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
-    
-      <form class="flex mr-auto grid grid-cols-12 gap-6" id="tabulator-html-filter-form">
-
-        <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 mt-2">
-          <label class="text-gray-600 mb-3 text-lg">Sarch For</label>
-          <input type="text" class="input w-full border" placeholder="Search">
-        </div>
-
-        <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-2 mt-1">
-          <button type="button" class="button text-center w-11 h-11 bg-theme-1 text-white mx-2 mt-8" id="">
-            <i data-feather="search" class="w-5 h-5 text-center"></i> 
-          </button>
-        </div>
-
-      </form>
-    </div>
 
     <div class="overflow-x-auto p-5"> 
       <table class="table"> 
@@ -83,9 +88,7 @@
 
     <button type="submit" class="button w-40 mr-5 ml-5 flex items-center justify-center bg-theme-1 text-white"> 
       <i data-feather="plus-square" class="w-4 h-4 mr-2  ml-2"></i>
-      <a href="reservation.php">
-        <span> Add New Patient <span> 
-      </a>
+      <span> Add New Patient <span> 
     </button>
 
   </div>
