@@ -79,10 +79,10 @@
 						<div class="intro-y box px-5 pt-5 pb-5 mt-5">
 
 							<div class="grid grid-cols-12 gap-6">
-								<h2 class="text-gray-600 mb-4 text-lg col-span-6"> Reservations </h2>
+								<h2 class="text-gray-600 mb-4 text-lg col-span-6"> Today Reservations </h2>
 
 								<a href="reservation.php" class="print ml-auto text-purple-700 dark:text-theme-10 truncate flex items-center col-span-6"> 
-									<i data-feather="plus" class="w-4 h-4 mr-1"></i> Add New Reaservation 
+									<i data-feather="plus" class="w-4 h-4 mr-1"></i> Add New Reservation 
 								</a>
 							</div>
 
@@ -100,7 +100,7 @@
 
 									<tbody> 
                     <?php
-                      for ($i=0; $i <10 ; $i++) { 
+                      for ($i=0; $i <6 ; $i++) { 
                     ?>
 
 										<tr> 
@@ -109,15 +109,9 @@
 											<td class="border-b dark:border-dark-5">0100000000<?php echo ($i+1) ?></td> 
 											<td class="border-b dark:border-dark-5"> 12 : 00 PM </td> 
 											<td class="print border-b dark:border-dark-5 whitespace-no-wrap">
-												<button class="button px-2 mr-1 mb-2 bg-theme-1 text-white tooltip" title="Check In Clinick"> 
+												<button class="button px-2 mr-1 mb-2 bg-theme-1 text-white tooltip" title="Check In Clinic"> 
 													<a href="#" class="w-5 h-5 flex items-center justify-center"> 
 														<i data-feather="flag" class="w-4 h-4"></i> 
-													</a> 
-												</button>
-
-												<button class="button px-2 mr-1 mb-2 bg-theme-1 text-white tooltip" title="With Doctor"> 
-													<a href="#" class="w-5 h-5 flex items-center justify-center"> 
-														<i data-feather="eye" class="w-4 h-4"></i> 
 													</a> 
 												</button>
 

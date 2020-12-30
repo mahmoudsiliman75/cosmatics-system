@@ -121,7 +121,7 @@ body::-webkit-scrollbar-thumb {
 
 .side-nav>ul ul {
   background-color: transparent;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
 .side-nav>ul ul li:hover {
@@ -133,3 +133,24 @@ body::-webkit-scrollbar-thumb {
   background-color: #583d72;
 }
 /* END:: CUSTOMIZING SIDE MENU STYLE */
+
+/* START:: ADD NEW VISIT PAGE STYLE */
+.examination-img-container {
+  position: relative;
+}
+
+.examination-img-container .overlay {
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.examination-img-container .overlay svg {
+  cursor: pointer;
+  font-size: 20px;
+}
+/* END:: ADD NEW VISIT PAGE STYLE */

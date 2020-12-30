@@ -118,6 +118,4 @@
 
 </form>
 
-
-
 <?php include("layouts/footer.php") ?>

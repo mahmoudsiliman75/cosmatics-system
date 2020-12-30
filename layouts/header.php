@@ -205,31 +205,48 @@
       </li>
 
       <li>
-				<a href="all-users.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
-					<div class="side-menu__title"> All Users </div>
-				</a>
-			</li>
-
-			<li>
 				<a href="edit-profile.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="settings"></i> </div>
 					<div class="side-menu__title"> Edit Profile </div>
 				</a>
 			</li>
 
-			<li>
-				<a href="reservation.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
-					<div class="side-menu__title"> Patient Registeration </div>
+      <li>
+				<a href="all-users.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
+					<div class="side-menu__title"> All Users </div>
+				</a>
+			</li>
+
+      <li>
+				<a href="clinics.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
+					<div class="side-menu__title"> Clinics </div>
 				</a>
 			</li>
 
 			<li>
-				<a href="doctor-info.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="edit-3"></i> </div>
-					<div class="side-menu__title"> Doctor Info </div>
+				<a href="javascript:;" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="log-in"></i> </div>
+					<div class="side-menu__title"> Visites <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
 				</a>
+				<ul class="">
+
+					<li>
+						<a href="reservation.php" class="side-menu">
+							<div class="side-menu__icon"> <i class="ml-3" data-feather="edit-3"></i> </div>
+							<div class="side-menu__title"> All Visites </div>
+						</a>
+					</li>
+
+					<li>
+						<a href="add-new-visite.php" class="side-menu">
+							<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
+							<div class="side-menu__title"> New Visit </div>
+						</a>
+					</li>
+
+				</ul>
 			</li>
 
 			<li>
@@ -262,7 +279,7 @@
 
 			<li>
 				<a href="javascript:;" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="file-text"></i> </div>
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="pie-chart"></i> </div>
 					<div class="side-menu__title"> System Report <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
 				</a>
 				<ul class="">

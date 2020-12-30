@@ -13,7 +13,7 @@ $(document).ready(function () {
   };
 });
 
-  // START:: RESERVATION PAGE
+  // START:: ADD NEW VISIT PAGE
   $('#drug-allergy-comments').css('visibility' , 'hidden');
   $('#smoking-comments').css('visibility' , 'hidden');
   $('#blood-transfusion-comments').css('visibility' , 'hidden');
@@ -81,10 +81,10 @@ $(document).ready(function () {
 
       <div class="col-span-10">
         <label class="text-gray-600 mb-3 text-lg">Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Comments" rows="3"></textarea>
       </div>
 
-      <span class="delete col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top: 50px; margin-bottom: 25px;"> Remove </span>
 
     </div>
     `;
@@ -95,7 +95,45 @@ $(document).ready(function () {
     });
   });
 
-  // END:: RESERVATION PAGE
+  $('#basic-info').css('display', 'none');
+  $('.toggle-edit-basic-info').on('click', () => {
+    $('#basic-info').css('display', 'block');
+  });
+
+  $('.remove-img').on('click', () => {
+    $('.remove-img').parent().parent().css('display', 'none');
+  });
+
+  $('#doctor-info').css('display' , 'none');
+  $('.toggle-edit-doctor-info').on('click', () => {
+    $('#doctor-info').css('display' , 'block');
+  });
+
+  $('#investigations').css('display', 'none');
+  $('.toggle-investigation').on('click', () => {
+    $('#investigations').css('display', 'block')
+  });
+
+  $('#visites').css('display', 'none');
+  $('.toggle-visites').on('click', () => {
+    $('#visites').css('display', 'block')
+  });
+
+  $('#procedure').css('display', 'none');
+  $('#procedure-details').css('display', 'none');
+  $('#procedures-title').css('display', 'none');
+  $('#procedure-financ').css('display', 'none');
+  $('.add-procedure').on('click', () => {
+    $('.add-procedure').css('display', 'none');
+    $('#procedure').css('display', 'block');
+    $('#procedure-details').css('display', 'block');
+    $('#procedures-title').css('display', 'block');
+    $('#procedure-financ').css('display', 'block');
+  });
+
+
+
+  // END:: ADD NEW VISIT PAGE
 
   // START:: DOCTOR INFO PAGE
 
@@ -105,10 +143,10 @@ $(document).ready(function () {
 
       <div class="col-span-8 md:col-span-10">
         <label class="text-gray-600 mb-3 text-lg">Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Comments" rows="3"></textarea>
       </div>
 
-      <span class="delete-complaint col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete-complaint col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top: 50px; margin-bottom: 25px;"> Remove </span>
 
     </div>
     `;
@@ -125,10 +163,10 @@ $(document).ready(function () {
 
       <div class="col-span-8 md:col-span-10">
         <label class="text-gray-600 mb-3 text-lg">Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Comments" rows="3"></textarea>
       </div>
 
-      <span class="delete-examination col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete-examination col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top: 50px; margin-bottom: 25px;"> Remove </span>
 
     </div>
     `;
@@ -145,10 +183,10 @@ $(document).ready(function () {
 
       <div class="col-span-8 md:col-span-10">
         <label class="text-gray-600 mb-3 text-lg">Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Comments" rows="3"></textarea>
       </div>
 
-      <span class="delete-diagnosis col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete-diagnosis col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top: 50px; margin-bottom: 25px;"> Remove </span>
 
     </div>
     `;
@@ -165,10 +203,10 @@ $(document).ready(function () {
 
       <div class="col-span-8 md:col-span-10">
         <label class="text-gray-600 mb-3 text-lg">Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Comments" rows="3"></textarea> 
       </div>
 
-      <span class="delete-plan col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete-plan col-span-4 md:col-span-2 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top: 50px; margin-bottom: 25px;"> Remove </span>
 
     </div>
     `;
@@ -178,6 +216,7 @@ $(document).ready(function () {
       $(this).parent().remove();
     });
   });
+
   // END:: DOCTOR INFO PAGE
 
   // START:: INVESTIGATIONS PAGE
@@ -188,7 +227,7 @@ $(document).ready(function () {
 
       <div class="col-span-12 md:col-span-8">
         <label class="text-gray-600 mb-3 text-lg">Results</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Results"> 
+        <textarea class="input w-full border mt-2" placeholder="Results" rows="3"></textarea>
       </div>
 
       <div class="col-span-8 md:col-span-3 lg:flex-row pr-3 pl-3 -mx-5">
@@ -196,7 +235,7 @@ $(document).ready(function () {
         <input name="file" type="file" class="input w-full border mt-2" style="padding: 4px;" multiple /> 
       </div>
 
-      <span class="delete-investigation font-black col-span-4 md:col-span-1 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> 
+      <span class="delete-investigation font-black col-span-4 md:col-span-1 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px; margin-bottom: 52px;"> 
         X 
       </span>
 
@@ -217,10 +256,10 @@ $(document).ready(function () {
 
       <div class="col-span-9">
         <label class="text-gray-600 mb-3 text-lg">Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Comments"></textarea> 
       </div>
 
-      <span class="delete-main-surgent col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete-main-surgent col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:45px; margin-bottom:22px"> Remove </span>
 
     </div>
     `;
@@ -237,10 +276,10 @@ $(document).ready(function () {
 
       <div class="col-span-9">
         <label class="text-gray-600 mb-3 text-lg">Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Comments"></textarea>
       </div>
 
-      <span class="delete-assistant col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete-main-surgent col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:45px; margin-bottom:22px"> Remove </span>
 
     </div>
     `;
@@ -257,10 +296,10 @@ $(document).ready(function () {
 
       <div class="col-span-9">
         <label class="text-gray-600 mb-3 text-lg">Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Comments"></textarea>
       </div>
 
-      <span class="delete-anesthesia col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:35px"> Remove </span>
+      <span class="delete-main-surgent col-span-3 button translate-y-3 my-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top:45px; margin-bottom:22px"> Remove </span>
 
     </div>
     `;
