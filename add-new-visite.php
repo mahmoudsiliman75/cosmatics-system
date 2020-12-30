@@ -636,7 +636,7 @@
 
     <div class="col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
       <label class="text-gray-600 mb-3 text-lg">Visite Details</label>
-      <textarea class="input pl-12 border w-full" placeholder="Visite Details" rows="5"></textarea>
+      <textarea class="input pl-12 border w-full" placeholder="Visite Details"></textarea>
     </div>
 
     <button type="submit" class="col-span-2 button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white"> 

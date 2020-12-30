@@ -216,7 +216,14 @@
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
 					<div class="side-menu__title"> All Users </div>
 				</a>
-			</li>
+      </li>
+      
+      <li>
+        <a href="all-rservation.php" class="side-menu">
+          <div class="side-menu__icon"> <i class="ml-3" data-feather="edit-3"></i> </div>
+          <div class="side-menu__title"> All Rservation </div>
+        </a>
+      </li>
 
       <li>
 				<a href="clinics.php" class="side-menu">
@@ -234,10 +241,10 @@
 
 					<li>
 						<a href="reservation.php" class="side-menu">
-							<div class="side-menu__icon"> <i class="ml-3" data-feather="edit-3"></i> </div>
-							<div class="side-menu__title"> All Visites </div>
+							<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
+							<div class="side-menu__title"> Rservation </div>
 						</a>
-					</li>
+          </li>
 
 					<li>
 						<a href="add-new-visite.php" class="side-menu">
