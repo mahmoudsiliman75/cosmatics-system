@@ -16,7 +16,7 @@
 
       <div class="col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Procedures</label>
-        <select data-placeholder="Select The Chronic Disease" data-search="true" class="chronic-diseases-selector tail-select w-full" multiple>
+        <select data-placeholder="Select The Chronic Disease" data-search="true" class="chronic-diseases-selector tail-select w-full">
           <option value="0">Procedure 1 </option>
           <option value="1">Procedure 2</option>
           <option value="2">Procedure 3</option>
