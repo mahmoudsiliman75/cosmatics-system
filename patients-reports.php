@@ -56,15 +56,15 @@
                 </a> 
               </button>
 
-              <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History Without Visits" > 
-                <a href="patient-history-without-visits.php" class="w-5 h-5 flex items-center justify-center"> 
+              <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History With Visits" > 
+                <a href="patient-history-with-visites.php" class="w-5 h-5 flex items-center justify-center"> 
                   <i data-feather="hard-drive" class="w-4 h-4"></i> 
                 </a> 
               </button>
 
-              <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History With Visits" > 
-                <a href="patient-history-with-visites.php" class="w-5 h-5 flex items-center justify-center"> 
-                  <i data-feather="hard-drive" class="w-4 h-4"></i> 
+              <button class="button px-2 mr-1 mb-2 bg-theme-1 text-white tooltip" title="Add Reservation"> 
+                <a href="javascript:;" data-toggle="modal" data-target="#add-reservation" class="w-5 h-5 flex items-center justify-center inline-block bg-theme-1 text-white">
+                  <i data-feather="plus" class="w-4 h-4"></i> 
                 </a> 
               </button>
 
@@ -97,15 +97,15 @@
                 </a> 
               </button>
 
-              <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History Without Visits" > 
-                <a href="patient-history-without-visits.php" class="w-5 h-5 flex items-center justify-center"> 
+              <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History With Visits" > 
+                <a href="patient-history-with-visites.php" class="w-5 h-5 flex items-center justify-center"> 
                   <i data-feather="hard-drive" class="w-4 h-4"></i> 
                 </a> 
               </button>
 
-              <button class="button px-2 mr-1 mb-2 bg-theme-12 text-white tooltip" title="Patient History With Visits" > 
-                <a href="patient-history-with-visites.php" class="w-5 h-5 flex items-center justify-center"> 
-                  <i data-feather="hard-drive" class="w-4 h-4"></i> 
+              <button class="button px-2 mr-1 mb-2 bg-theme-1 text-white tooltip" title="Add Reservation"> 
+                <a href="javascript:;" data-toggle="modal" data-target="#add-reservation" class="w-5 h-5 flex items-center justify-center inline-block bg-theme-1 text-white">
+                  <i data-feather="plus" class="w-4 h-4"></i> 
                 </a> 
               </button>
 
@@ -145,6 +145,44 @@
         </ul>
       </div>
       <!-- START:: PAGINATION -->
+
+      <!-- START:: ADD RESERVATION MODAL -->
+      <div class="modal" id="add-reservation">
+        <div class="modal__content modal__content--xl px-10 py-5"> 
+          <div class="intro-y flex items-center pt-2 mb-5 h-10">
+            <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Patients Report</h2>
+          </div>
+
+          <form class="grid grid-cols-12 gap-12">
+            <div class="col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+              <label class="text-gray-600 mb-3 text-lg">Clinic</label>
+              <select data-search="true" class="tail-select w-full">
+                <option value="0">Clinic 1</option>
+                <option value="1">Clinic 2</option>
+                <option value="2">Clinic 3</option>
+              </select>  
+            </div>
+
+            <div class="col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+              <label class="text-gray-600 mb-3 text-lg">Date</label>
+              <input type="text" class="input w-full border mt-2" placeholder="Patient Name"> 
+            </div>
+
+            <div class="col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+              <label class="text-gray-600 mb-3 text-lg">Time</label>
+              <input type="time" class="input w-full border mt-2"> 
+            </div>
+
+            <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
+              <button type="submit" class="button w-40 mr-5 ml-5 flex items-center justify-center bg-theme-1 text-white"> 
+                <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i>
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- END:: ADD RESERVATION MODAL -->
 
     </div> 
 

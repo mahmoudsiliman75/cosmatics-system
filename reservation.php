@@ -20,6 +20,15 @@
       </div>
 
       <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
+        <label class="text-gray-600 mb-3 text-lg">Clinic</label>
+        <select data-search="true" class="tail-select w-full">
+          <option value="0">Clinic 1</option>
+          <option value="1">Clinic 2</option>
+          <option value="2">Clinic 3</option>
+        </select>  
+      </div>
+
+      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Reservation Date</label>
         <input type="date" class=" input pl-12 border w-full" data-single-mode="true" placeholder="Reservation Date">
       </div>
@@ -82,7 +91,7 @@
         <input type="email" class="input w-full border mt-2" placeholder="Address"> 
       </div>
 
-      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
+      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Country</label>
         <select data-search="true" class="tail-select w-full">
           <option>Select Country</option>
@@ -92,7 +101,7 @@
         </select> 
       </div>
 
-      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 -mx-5">
+      <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Address</label>
         <input type="text" class="input w-full border mt-2" placeholder="Address"> 
       </div>

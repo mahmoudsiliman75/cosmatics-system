@@ -217,7 +217,14 @@
 					<div class="side-menu__title"> All Users </div>
 				</a>
       </li>
-      
+
+      <li>
+        <a href="patients-reports.php" class="side-menu">
+          <div class="side-menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+          <div class="side-menu__title"> All Patients </div>
+        </a>
+      </li>
+
       <li>
         <a href="all-rservation.php" class="side-menu">
           <div class="side-menu__icon"> <i class="ml-3" data-feather="edit-3"></i> </div>
