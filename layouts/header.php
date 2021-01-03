@@ -35,7 +35,7 @@
 			</a>
 		</div>
 
-		<ul class="border-t border-theme-24 py-5 hidden">
+		<ul class="py-5 hidden">
 
 			<li>
 				<a href="index.php" class="menu">
@@ -192,8 +192,8 @@
 		<ul>
 			<li>
 				<a href="index.php" class="side-menu side-menu--active">
-						<div class="side-menu__icon"> <i class="ml-3" data-feather="home"></i> </div>
-						<div class="side-menu__title"> Home </div>
+          <div class="side-menu__icon"> <i class="ml-3" data-feather="home"></i> </div>
+          <div class="side-menu__title"> Home </div>
 				</a>
 			</li>
 
@@ -220,17 +220,31 @@
 
       <li>
         <a href="patients-reports.php" class="side-menu">
-          <div class="side-menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+          <div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
           <div class="side-menu__title"> All Patients </div>
         </a>
       </li>
 
       <li>
+        <a href="reservation.php" class="side-menu">
+          <div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
+          <div class="side-menu__title"> Rservation </div>
+        </a>
+      </li>
+
+      <li>
         <a href="all-rservation.php" class="side-menu">
-          <div class="side-menu__icon"> <i class="ml-3" data-feather="edit-3"></i> </div>
+          <div class="side-menu__icon"> <i class="ml-3" data-feather="inbox"></i> </div>
           <div class="side-menu__title"> All Rservation </div>
         </a>
       </li>
+
+      <li>
+				<a href="#" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
+					<div class="side-menu__title"> Hospitals </div>
+				</a>
+			</li>
 
       <li>
 				<a href="clinics.php" class="side-menu">
@@ -239,62 +253,17 @@
 				</a>
 			</li>
 
-			<li>
-				<a href="javascript:;" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="log-in"></i> </div>
-					<div class="side-menu__title"> Visites <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
-				</a>
-				<ul class="">
-
-					<li>
-						<a href="reservation.php" class="side-menu">
-							<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
-							<div class="side-menu__title"> Rservation </div>
-						</a>
-          </li>
-
-					<li>
-						<a href="add-new-visite.php" class="side-menu">
-							<div class="side-menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
-							<div class="side-menu__title"> New Visit </div>
-						</a>
-					</li>
-
-				</ul>
-			</li>
-
-			<li>
-				<a href="visites.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="log-in"></i> </div>
-					<div class="side-menu__title"> Visites </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="investigations.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="briefcase"></i> </div>
-					<div class="side-menu__title"> Investigation </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="procedures.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="activity"></i> </div>
-					<div class="side-menu__title"> Procedure </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="procedure-financ.php" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="dollar-sign"></i> </div>
-					<div class="side-menu__title"> Procedure Financilas </div>
+      <li>
+				<a href="#" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
+					<div class="side-menu__title"> Surgeries </div>
 				</a>
 			</li>
 
 			<li>
 				<a href="javascript:;" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="pie-chart"></i> </div>
-					<div class="side-menu__title"> System Report <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
+					<div class="side-menu__title"> Reports <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
 				</a>
 				<ul class="">
 
@@ -329,12 +298,12 @@
 				</ul>
 			</li>
 
-			<li>
+			<!-- <li>
 				<a href="financial.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="dollar-sign"></i> </div>
 					<div class="side-menu__title"> Financilas </div>
 				</a>
-			</li>
+			</li> -->
 
 		</ul>
 	</nav>
