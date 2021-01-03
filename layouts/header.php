@@ -219,7 +219,7 @@
       </li>
 
       <li>
-        <a href="patients-reports.php" class="side-menu">
+        <a href="all-patients.php" class="side-menu">
           <div class="side-menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
           <div class="side-menu__title"> All Patients </div>
         </a>
@@ -239,12 +239,12 @@
         </a>
       </li>
 
-      <li>
+      <!-- <li>
 				<a href="#" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
 					<div class="side-menu__title"> Hospitals </div>
 				</a>
-			</li>
+			</li> -->
 
       <li>
 				<a href="clinics.php" class="side-menu">

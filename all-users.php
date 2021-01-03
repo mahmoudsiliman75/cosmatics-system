@@ -28,7 +28,7 @@
         <i data-feather="printer" class="w-4 h-4 mr-2  ml-2"></i> Print 
       </button>
 
-      <button type="submit" class="print button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+      <button type="submit" class="print button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white w-32"> 
         <a href="add-user.php" class="w-full"> <i data-feather="plus" class="inline w-4 h-4 mr-2  ml-2"></i> Add User </a>
       </button>
 
@@ -98,7 +98,7 @@
       </table> 
 
       <!-- START:: PAGINATION -->
-      <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
+      <div class="print intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
         <ul class="pagination">
           <li>
             <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4"><polyline points="15 18 9 12 15 6"></polyline></svg> </a>
