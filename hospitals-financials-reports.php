@@ -24,7 +24,7 @@
 
       </form>
 
-      <button class="button p-0 mt-5 mr-5 ml-5 flex items-center justify-center bg-theme-1 text-white"> 
+      <button class="button p-0 mt-5 mr-5 ml-5 flex items-center justify-center bg-theme-1 text-white" style="width: 190px;"> 
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-square w-4 h-4 mr-2 ml-2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
         <a href="javascript:;" data-toggle="modal" data-target="#add-new-hospital" class="button inline-block bg-theme-1 text-white">
           Add New Hospital
@@ -54,7 +54,7 @@
       </table> 
 
       <!-- START:: PAGINATION -->
-      <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
+      <div class="print intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
         <ul class="pagination">
           <li>
             <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4"><polyline points="15 18 9 12 15 6"></polyline></svg> </a>
@@ -138,7 +138,6 @@
                       <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Patient Fees</th> 
                       <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Hospital Fees</th> 
                       <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Doctor Profits</th> 
-                      <th class="print border-b-2 dark:border-dark-5 whitespace-no-wrap">Actions</th> 
                     </tr> 
                   </thead> 
 
@@ -150,23 +149,6 @@
                       <td class="border-b dark:border-dark-5"> 50000 </td>
                       <td class="border-b dark:border-dark-5"> 20000 </td>
                       <td class="border-b dark:border-dark-5"> 30000 </td> 
-
-                      <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
-
-                        <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
-                          <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                            <i data-feather="edit" class="w-4 h-4"></i> 
-                          </a> 
-                        </button>
-
-                        <button class="button px-2 mr-1 mb-2 bg-theme-6 text-white tooltip" title="Delete"> 
-                          <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                            <i data-feather="trash" class="w-4 h-4"></i> 
-                          </a> 
-                        </button>
-
-                      </td> 
-
                     </tr>
 
                     <tr> 
@@ -176,23 +158,6 @@
                       <td class="border-b dark:border-dark-5"> 50000 </td>
                       <td class="border-b dark:border-dark-5"> 20000 </td>
                       <td class="border-b dark:border-dark-5"> 30000 </td> 
-
-                      <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
-
-                        <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
-                          <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                            <i data-feather="edit" class="w-4 h-4"></i> 
-                          </a> 
-                        </button>
-
-                        <button class="button px-2 mr-1 mb-2 bg-theme-6 text-white tooltip" title="Delete"> 
-                          <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                            <i data-feather="trash" class="w-4 h-4"></i> 
-                          </a> 
-                        </button>
-
-                      </td> 
-
                     </tr>
                   </tbody> 
                 </table> 

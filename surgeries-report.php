@@ -40,7 +40,6 @@
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Patients</th>
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Number Of Males</th> 
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Number Of Females</th> 
-            <th class="print border-b-2 dark:border-dark-5 whitespace-no-wrap">Actions</th> 
           </tr> 
         </thead> 
 
@@ -52,23 +51,6 @@
             <td class="border-b dark:border-dark-5"> 30 </td> 
             <td class="border-b dark:border-dark-5"> 5 </td>
             <td class="border-b dark:border-dark-5"> 25 </td> 
-
-            <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
-
-              <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
-                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                  <i data-feather="edit" class="w-4 h-4"></i> 
-                </a> 
-              </button>
-
-              <button class="button px-2 mr-1 mb-2 bg-theme-6 text-white tooltip" title="Delete"> 
-                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                  <i data-feather="trash" class="w-4 h-4"></i> 
-                </a> 
-              </button>
-
-            </td> 
-
           </tr>
 
           <tr> 
@@ -78,29 +60,12 @@
             <td class="border-b dark:border-dark-5"> 60 </td> 
             <td class="border-b dark:border-dark-5"> 50 </td>
             <td class="border-b dark:border-dark-5"> 10 </td> 
-
-            <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
-
-              <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
-                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                  <i data-feather="edit" class="w-4 h-4"></i> 
-                </a> 
-              </button>
-
-              <button class="button px-2 mr-1 mb-2 bg-theme-6 text-white tooltip" title="Delete"> 
-                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                  <i data-feather="trash" class="w-4 h-4"></i> 
-                </a> 
-              </button>
-
-            </td> 
-
           </tr>
         </tbody> 
       </table> 
 
       <!-- START:: PAGINATION -->
-      <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
+      <div class="print intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
         <ul class="pagination">
           <li>
             <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4"><polyline points="15 18 9 12 15 6"></polyline></svg> </a>
