@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="">
 <!-- BEGIN: Head -->
 <head>
 	<meta charset="utf-8">
@@ -326,7 +326,13 @@
 				<i data-feather="search" class="search__icon dark:text-gray-300"></i> 
 			</div>
 		</div>
-		<!-- END: Search -->
+    <!-- END: Search -->
+    
+    <!-- START:: DARK MODE -->
+    <!-- <button class="dark-mode notification mr-3"> 
+      <i class="ml-3" data-feather="moon"></i> 
+    </button> -->
+    <!-- START:: DARK MODE -->
 
     <!-- BEGIN: SYSTEM THEMES -->
 		<div class="intro-x dropdown relative mr-auto  ml-2 sm:mr-6">
@@ -336,6 +342,7 @@
 				<div class="notification-content dropdown-box mt-8 absolute top-0 left-0 sm:left-auto sm:right-0 z-20 -ml-10 sm:ml-0">
           <div class="notification-content__box dropdown-box__content box dark:bg-dark-6" style="width: 60%; position: absolute; right: 0;">
             <ul class="color-themes">
+              <li class="mb-3" data-color="linear-gradient(to bottom, #0d697e, #a056c5, #961f60)"> Default </li>
               <li class="mb-3" data-color="linear-gradient(to bottom, #e67a88,#ee9ca7, #ffdde1)">Piggy Pink</li>
               <li class="mb-3" data-color="linear-gradient(to bottom, #2c3e50,#4b6075,#bdc3c7)">Grady Grey</li>
               <li class="mb-3" data-color="linear-gradient(to bottom, #5d26c1, #a17fe0, #59c173)">Magic</li>

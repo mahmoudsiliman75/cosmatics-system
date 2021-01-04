@@ -13,6 +13,13 @@ $(document).ready(function () {
   };
 });
 
+  // START:: DARK MODE
+  // $('.dark-mode').on('click', function() {
+  //   $('html').toggleClass('dark');
+  //   $('body').css('background', '#232A3B');
+  // });
+  // START:: DARK MODE
+
   // START:: SYSTEM THEMES
   $('.color-themes li').on('click', function() {
     $(':root').css('--mainBackGround', $(this).data('color'));

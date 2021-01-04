@@ -62,22 +62,25 @@ body::-webkit-scrollbar-thumb {
   border-radius: 15px;
   font-weight: 600;
   color: #fff;
-  background: #080;
   cursor: pointer;
 }
 .color-themes li:first-child {
-  background: linear-gradient(to right, #e67a88,#ee9ca7, #ffdde1);
+  background: linear-gradient(to right, #0d697e, #a056c5, #961f60);
 }
 
 .color-themes li:nth-child(2) {
-  background: linear-gradient(to right, #2c3e50,#4b6075,#bdc3c7);
+  background: linear-gradient(to right, #e67a88,#ee9ca7, #ffdde1);
 }
 
 .color-themes li:nth-child(3) {
-  background: linear-gradient(to right, #5d26c1, #a17fe0, #59c173);
+  background: linear-gradient(to right, #2c3e50,#4b6075,#bdc3c7);
 }
 
 .color-themes li:nth-child(4) {
+  background: linear-gradient(to right, #5d26c1, #a17fe0, #59c173);
+}
+
+.color-themes li:nth-child(5) {
   background: linear-gradient(to right, #f3904f, #6239af, #3b4371);
 }
 
