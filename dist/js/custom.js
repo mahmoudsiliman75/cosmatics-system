@@ -13,6 +13,12 @@ $(document).ready(function () {
   };
 });
 
+  // START:: SYSTEM THEMES
+  $('.color-themes li').on('click', function() {
+    $(':root').css('--mainBackGround', $(this).data('color'));
+  });
+  // END:: SYSTEM THEMES
+
   // START:: ADD NEW VISIT PAGE
   $('#drug-allergy-comments').css('visibility' , 'hidden');
   $('#smoking-comments').css('visibility' , 'hidden');

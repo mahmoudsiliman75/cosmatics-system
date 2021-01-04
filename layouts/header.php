@@ -19,7 +19,15 @@
 	<link rel="stylesheet" href="dist/css/custom-style.css" />
 	<link rel="stylesheet" href="dist/css/print.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-	<!-- END: CSS Assets-->
+  <!-- END: CSS Assets-->
+  
+  <style>
+    /* START:: ROOT SELECTOE */
+    :root {
+      --mainBackGround: linear-gradient(to bottom, #0d697e, #a056c5, #961f60); 
+    }
+    /* START:: ROOT SELECTOE */
+  </style>
 </head>
 <!-- END: Head -->
 <body class="app">
@@ -239,13 +247,6 @@
         </a>
       </li>
 
-      <!-- <li>
-				<a href="#" class="side-menu">
-					<div class="side-menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
-					<div class="side-menu__title"> Hospitals </div>
-				</a>
-			</li> -->
-
       <li>
 				<a href="clinics.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
@@ -254,7 +255,7 @@
 			</li>
 
       <li>
-				<a href="#" class="side-menu">
+				<a href="surgires.php" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
 					<div class="side-menu__title"> Surgeries </div>
 				</a>
@@ -326,6 +327,25 @@
 			</div>
 		</div>
 		<!-- END: Search -->
+
+    <!-- BEGIN: SYSTEM THEMES -->
+		<div class="intro-x dropdown relative mr-auto  ml-2 sm:mr-6">
+				<div class="dropdown-toggle notification cursor-pointer"> 
+          <i data-feather="droplet" class="notification__icon dark:text-gray-300"></i> 
+        </div>
+				<div class="notification-content dropdown-box mt-8 absolute top-0 left-0 sm:left-auto sm:right-0 z-20 -ml-10 sm:ml-0">
+          <div class="notification-content__box dropdown-box__content box dark:bg-dark-6" style="width: 60%; position: absolute; right: 0;">
+            <ul class="color-themes">
+              <li class="mb-3" data-color="linear-gradient(to bottom, #e67a88,#ee9ca7, #ffdde1)">Piggy Pink</li>
+              <li class="mb-3" data-color="linear-gradient(to bottom, #2c3e50,#4b6075,#bdc3c7)">Grady Grey</li>
+              <li class="mb-3" data-color="linear-gradient(to bottom, #5d26c1, #a17fe0, #59c173)">Magic</li>
+              <li class="mb-3" data-color="linear-gradient(to bottom, #f3904f, #6239af, #3b4371)">Dawn</li>
+              <li class="mb-3" data-color="linear-gradient(to bottom, #feac5e, #c779d0, #4bc0c8)">Atlas</li>
+            </ul>
+          </div>
+				</div>
+		</div>
+		<!-- END: SYSTEM THEMES -->
 
 		<!-- BEGIN: Notifications -->
 		<div class="intro-x dropdown relative mr-auto  ml-2 sm:mr-6">

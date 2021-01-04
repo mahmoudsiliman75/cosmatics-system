@@ -4,7 +4,7 @@
 }
 
 html {
-  background: linear-gradient(to bottom, #0d697e, #a056c5, #961f60);
+  background: var(--mainBackGround);
 }
 
 .clearFix {
@@ -54,6 +54,37 @@ body::-webkit-scrollbar-thumb {
   background-color: #F1F1F1;
 }
 /* END CUSTOMIZE:: MODAL SCROLLBAR STYLE */
+
+/* START:: SYSTEM THEMES STYLE */
+.color-themes li{
+  text-align: center;
+  padding: 6px;
+  border-radius: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #080;
+  cursor: pointer;
+}
+.color-themes li:first-child {
+  background: linear-gradient(to right, #e67a88,#ee9ca7, #ffdde1);
+}
+
+.color-themes li:nth-child(2) {
+  background: linear-gradient(to right, #2c3e50,#4b6075,#bdc3c7);
+}
+
+.color-themes li:nth-child(3) {
+  background: linear-gradient(to right, #5d26c1, #a17fe0, #59c173);
+}
+
+.color-themes li:nth-child(4) {
+  background: linear-gradient(to right, #f3904f, #6239af, #3b4371);
+}
+
+.color-themes li:last-child {
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+}
+/* END:: SYSTEM THEMES STYLE */
 
 /* START:: CUSTOMIZING CK EDITORS STYLE */
 #profile .ck.ck-editor {
