@@ -138,15 +138,26 @@ body::-webkit-scrollbar-thumb {
 /* END:: CUSTOMIZING HEADER STYLE */
 
 /* START:: CUSTOMIZING SIDE MENU STYLE */
-.side-nav .nav-brand{
-  width: 120px;
+.side-nav .nav-brand {
   margin-bottom: 15px;
-  margin-left: 55px;
-  padding: 20px;
-  border-radius: 50%;
+  margin-left: 24px;
+  padding: 20px 5px 30px;
+  border-radius: 10px;
   background-color: rgba(225, 225, 225, 0.4);
-  /* background-color: #f1f5f8; */
   box-shadow: 0 0 8px 2px #f1f5f8;
+}
+
+.mobile-menu {
+  border-color: transparent;
+}
+
+.mobile-menu img {
+  margin-left: 10px;
+}
+
+.mobile-menu ul li ul {
+  background-color: transparent;
+  padding-left: 10px;
 }
 
 .side-nav .side-menu.side-menu--active .side-menu__icon svg {

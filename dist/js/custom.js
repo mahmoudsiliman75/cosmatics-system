@@ -22,8 +22,10 @@ $(document).ready(function () {
 
   // START:: SYSTEM THEMES
   $('.color-themes li').on('click', function() {
-    $(':root').css('--mainBackGround', $(this).data('color'));
+    localStorage.setItem('--mainBackGround', $(this).data('color'));
+    $(':root').css('--mainBackGround', localStorage.getItem('--mainBackGround'));
   });
+  
   // END:: SYSTEM THEMES
 
   // START:: ADD NEW VISIT PAGE

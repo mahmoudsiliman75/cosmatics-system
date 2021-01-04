@@ -33,10 +33,10 @@
 <body class="app">
 
 	<!-- BEGIN: Mobile Menu -->
-	<div class="mobile-menu md:hidden">
+	<div class="mobile-menu md:hidden py-6">
 		<div class="mobile-menu-bar flex justify-between">
 			<a href="" class="flex">
-				<img alt="Midone Tailwind HTML Admin Template" class="w-14" src="dist/images/icon.png">
+				<img alt="" class="w-14" src="dist/images/icon.png">
 			</a>
 			<a href="javascript:;" id="mobile-menu-toggler"> 
 				<i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> 
@@ -50,140 +50,99 @@
 					<div class="menu__icon"> <i class="ml-3" data-feather="home"></i> </div>
 					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Home </span> </div>
 				</a>
-			</li>
-
-			<li>
-				<a href="inbox.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="inbox"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Inbox </span> </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="profile.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="user"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Profile </span> </div>
-				</a>
       </li>
       
-
+      <li>
+				<a href="system-settings.php" class="menu">
+					<div class="menu__icon"> <i class="ml-3" data-feather="settings"></i> </div>
+					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> System Settings </span> </div>
+				</a>
+			</li>
 
 			<li>
 				<a href="edit-profile.php" class="menu">
 					<div class="menu__icon"> <i class="ml-3" data-feather="settings"></i> </div>
 					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Edit Profile </span> </div>
 				</a>
-			</li>
+      </li>
 
-			<li>
-				<a href="notifications.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="bell"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Notifications </span> </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="javascript:;" class="menu">
+      <li>
+				<a href="all-users.php" class="menu">
 					<div class="menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Employees </span> <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
-				</a>
-				<ul class="">
-
-					<li>
-						<a href="add-user.php" class="menu">
-							<div class="menu__icon"> <i class="ml-3" data-feather="user-plus"></i> </div>
-							<div class="menu__title"> Add Employee </div>
-						</a>
-					</li>
-
-					<li>
-						<a href="all-employees.php" class="menu">
-							<div class="menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
-							<div class="menu__title"> All Employees </div>
-						</a>
-					</li>
-				</ul>
-			</li>
-
-			<li>
-				<a href="all-clinics.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="home"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Clinics </span> </div>
+					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> All Users </span> </div>
 				</a>
 			</li>
 
-			<li>
-				<a href="governorate-manage.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="map"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Governorates Management </span> </div>
+      <li>
+				<a href="all-patients.php" class="menu">
+					<div class="menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
+					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> All Patients </span> </div>
 				</a>
-			</li>
+      </li>
 
-			<li>
+      <li>
 				<a href="reservation.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="plus-square"></i> </div>
+					<div class="menu__icon"> <i class="ml-3" data-feather="plus"></i> </div>
 					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Reservation </span> </div>
 				</a>
 			</li>
 
-			<li>
-				<a href="services.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="star"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Services </span> </div>
+      <li>
+				<a href="all-rservation.php" class="menu">
+					<div class="menu__icon"> <i class="ml-3" data-feather="inbox"></i> </div>
+					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> All Reservation </span> </div>
 				</a>
 			</li>
 
 			<li>
+				<a href="clinics.php" class="menu">
+					<div class="menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
+					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Clinics </span> </div>
+				</a>
+      </li>
+
+      <li>
+				<a href="surgires.php" class="menu">
+					<div class="menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
+					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Surgeries </span> </div>
+				</a>
+      </li>
+
+			<li>
 				<a href="javascript:;" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Patients </span> <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+					<div class="menu__icon"> <i class="ml-3" data-feather="pie-chart"></i> </div>
+					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Reports </span> <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
 				</a>
 				<ul class="">
 
 					<li>
-						<a href="add-new-patient.php" class="menu">
-							<div class="menu__icon"> <i class="ml-3" data-feather="user-plus"></i> </div>
-							<div class="menu__title"> Add New Patient </div>
+						<a href="surgeries-report.php" class="menu">
+							<div class="menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+							<div class="menu__title"> Surgeries Report  </div>
+						</a>
+          </li>
+
+          <li>
+						<a href="surgery-financial-report.php" class="menu">
+							<div class="menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+							<div class="menu__title"> Surgeries Financial Report </div>
+						</a>
+          </li>
+
+          <li>
+						<a href="hospitals-financials-reports.php" class="menu">
+							<div class="menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+							<div class="menu__title"> Hospitals Financial Report </div>
 						</a>
 					</li>
 
 					<li>
-						<a href="all-patients.php" class="menu">
-							<div class="menu__icon"> <i class="ml-3" data-feather="users"></i> </div>
-							<div class="menu__title"> All Patients </div>
+						<a href="patients-reports.php" class="menu">
+							<div class="menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+							<div class="menu__title"> Patients Reports </div>
 						</a>
 					</li>
 				</ul>
-			</li>
-
-			<li>
-				<a href="schedules.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="file-text"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Schedules </span> </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="financial.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="dollar-sign"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Financilas </span> </div>
-				</a>
-			</li>
-
-			<div class="side-nav__devider my-6"></div>
-
-			<li>
-				<a href="policies-and-terms.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="shield"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Policies And Terms </span> </div>
-				</a>
-			</li>
-
-			<li>
-				<a href="roles.php" class="menu">
-					<div class="menu__icon"> <i class="ml-3" data-feather="shield"></i> </div>
-					<div class="menu__title"> <span class="xl:block text-white text-lg ml-3"> Roles </span> </div>
-				</a>
 			</li>
 
 		</ul>
@@ -194,7 +153,7 @@
 	<!-- BEGIN: Side Menu -->
 	<nav class="side-nav pt-2">
 		<a href="index.php" class="nav-brand intro-x flex items-center">
-			<img alt="Midone Tailwind HTML Admin Template" class="w-44" src="dist/images/icon.png">
+			<img alt="" class="w-44" src="dist/images/logo.png">
 		</a>
 
 		<ul>
@@ -340,7 +299,7 @@
           <i data-feather="droplet" class="notification__icon dark:text-gray-300"></i> 
         </div>
 				<div class="notification-content dropdown-box mt-8 absolute top-0 left-0 sm:left-auto sm:right-0 z-20 -ml-10 sm:ml-0">
-          <div class="notification-content__box dropdown-box__content box dark:bg-dark-6" style="width: 60%; position: absolute; right: 0;">
+          <div class="notification-content__box dropdown-box__content box dark:bg-dark-6">
             <ul class="color-themes">
               <li class="mb-3" data-color="linear-gradient(to bottom, #0d697e, #a056c5, #961f60)"> Default </li>
               <li class="mb-3" data-color="linear-gradient(to bottom, #e67a88,#ee9ca7, #ffdde1)">Piggy Pink</li>

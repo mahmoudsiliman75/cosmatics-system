@@ -15,8 +15,28 @@
         <input type="text" class="input w-full border" placeholder="Surgiry Type">
       </div>
 
+      <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-3 mt-2">
+        <label class="text-gray-600 mb-3 text-lg">Total Number</label>
+        <input type="text" class="input w-full border" placeholder="Total Number">
+      </div>
+
+      <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-3 mt-2">
+        <label class="text-gray-600 mb-3 text-lg">Total Patient Fees</label>
+        <input type="text" class="input w-full border" placeholder="Total Patient Fees">
+      </div>
+
+      <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-6 mt-2">
+        <label class="text-gray-600 mb-3 text-lg">Total Hospital Fees</label>
+        <input type="text" class="input w-full border" placeholder="Total Hospital Fees">
+      </div>
+
+      <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-6 mt-2">
+        <label class="text-gray-600 mb-3 text-lg">Total Doctor Profits</label>
+        <input type="text" class="input w-full border" placeholder="Total Doctor Profits">
+      </div>
+
       <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-2 mt-1">
-        <button type="button" class="flex justify-center button text-center w-11 h-11 bg-theme-1 text-white mx-2 mt-8 w-full">
+        <button type="button" class="flex justify-center button text-center w-11 h-11 bg-theme-1 text-white mx-2 w-full">
           <i data-feather="plus" class="w-5 h-5 text-center"></i> 
           <span>Add Surgiry</span>
         </button>
@@ -30,8 +50,11 @@
         <thead> 
           <tr class="bg-gray-200 dark:bg-dark-1"> 
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">#</th> 
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Name</th> 
-            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Visites</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Type</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Number</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Patient Fees</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Patient Fees</th> 
+            <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Total Doctor Profits</th> 
             <th class="print border-b-2 dark:border-dark-5 whitespace-no-wrap">Actions</th> 
           </tr> 
         </thead> 
@@ -39,31 +62,11 @@
         <tbody> 
           <tr> 
             <td class="border-b dark:border-dark-5">1</td> 
-            <td class="border-b dark:border-dark-5">clinic 1</td> 
+            <td class="border-b dark:border-dark-5">Type 1</td> 
             <td class="border-b dark:border-dark-5"> 40 </td> 
-
-            <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
-
-              <button class="button px-2 mr-1 mb-2 bg-theme-9 text-white tooltip" title="Edit"> 
-                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                  <i data-feather="edit" class="w-4 h-4"></i> 
-                </a> 
-              </button>
-
-              <button class="button px-2 mr-1 mb-2 bg-theme-6 text-white tooltip" title="Delete"> 
-                <a href="#" class="w-5 h-5 flex items-center justify-center"> 
-                  <i data-feather="trash" class="w-4 h-4"></i> 
-                </a> 
-              </button>
-
-            </td> 
-
-          </tr>
-
-          <tr> 
-            <td class="border-b dark:border-dark-5">2</td> 
-            <td class="border-b dark:border-dark-5">clinic 2</td> 
-            <td class="border-b dark:border-dark-5"> 60 </td> 
+            <td class="border-b dark:border-dark-5"> 60000 </td> 
+            <td class="border-b dark:border-dark-5"> 10000 </td> 
+            <td class="border-b dark:border-dark-5"> 50000 </td> 
 
             <td class="print border-b dark:border-dark-5 whitespace-no-wrap">
 

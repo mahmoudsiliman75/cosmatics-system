@@ -16,6 +16,9 @@
 
 
         <script src="dist/js/custom.js"></script>
+        <script>
+          $(':root').css('--mainBackGround', localStorage.getItem('--mainBackGround'));
+        </script>
 
 
         <!-- END: JS Assets-->

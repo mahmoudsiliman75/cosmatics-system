@@ -117,7 +117,7 @@
 
       <div id="drug-allergy-comments" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:col-span-8 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Drug Allergy Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Drug Allergy Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Drug Allergy Comments" rows="4"></textarea> 
       </div>
 
       <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
@@ -131,7 +131,7 @@
 
       <div id="smoking-comments" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:col-span-8 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Smoking Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Smoking Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Smoking Comments" rows="4"></textarea> 
       </div>
 
       <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
@@ -145,7 +145,7 @@
 
       <div id="blood-transfusion-comments" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:col-span-8 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Blood Transfusion Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Blood Transfusion Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Blood Transfusion Comments" rows="4"></textarea> 
       </div>
 
       <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
@@ -159,7 +159,7 @@
 
       <div id="alcoholic-comments" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:col-span-8 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Alcoholic Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Alcoholic Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Alcoholic Comments" rows="4"></textarea> 
       </div>
 
       <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
@@ -173,7 +173,7 @@
 
       <div id="prev-sergeries-comments" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:col-span-8 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Previous Sergeries Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Previous Sergeries Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Previous Sergeries Comments" rows="4"></textarea> 
       </div>
 
       <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
@@ -187,7 +187,7 @@
 
       <div id="family-history-comments" class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 lg:col-span-8 lg:flex-row pr-3 pl-3 -mx-5">
         <label class="text-gray-600 mb-3 text-lg">Family History Comments</label>
-        <input type="text" class="input w-full border mt-2" placeholder="Family History Comments"> 
+        <textarea class="input w-full border mt-2" placeholder="Family History Comments" rows="4"></textarea> 
       </div>
 
       <div class="col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 -mx-5">
@@ -199,7 +199,6 @@
         <label class="text-gray-600 mb-3 text-lg">Patient History Comments</label>
         <input type="text" class="input w-full border mt-2" placeholder="Patient History Comments"> 
       </div>
-
 
       <div class="col-span-12">
         <label class="text-gray-600 mb-3 text-lg">Chronic Diseases</label>
